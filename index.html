@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ciberall® ofrece soluciones premium de internet y tecnología para eventos en México: Wi-Fi empresarial, internet dedicado, soporte 24/7 y redes temporales para eventos masivos.">
+    <meta name="keywords" content="Renta de equipos de internet para eventos, Renta Starlink para eventos México, Internet dedicado para eventos masivos, Conexión satelital eventos remotos, Internet para streaming en vivo eventos, Servicio de Wi-Fi empresarial CDMX, Cobertura de internet en Ciudad de México, Proveedor de internet para eventos en todo México, Instalación de redes temporales para festivales, Hotspot Wi-Fi para congresos y convenciones">
+    <meta name="author" content="Ciberall">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ciberall®: Soluciones Premium de Internet y Tecnología para Eventos en México">
+    <meta property="og:description" content="Impulsa tus eventos con conectividad de alto rendimiento: Wi-Fi empresarial escalable, soporte técnico 24/7 y soluciones TI personalizadas para cualquier tipo de evento en México.">
+    <meta property="og:image" content="https://internet-eventos-mexico.com/PORTADA/PORTADA%20INTERNET%20EVENTOS.png">
+    <meta property="og:url" content="https://internet-eventos-mexico.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ciberall">
+    <meta property="og:locale" content="es_MX">
+    <title>Ciberall®: Soluciones Premium de Internet y Tecnología para Eventos en México</title>
+    <link rel="icon" type="image/x-icon" href="https://ciberall.net/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            cursor: none;
+        }
+
+        /* Custom Comet Cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 16px;
+            height: 16px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.7);
+            transition: transform 0.1s ease;
+        }
+
+        .custom-cursor::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            top: 50%;
+            left: 50%;
+            transform: translate(-10%, -50%) rotate(0deg);
+            transform-origin: left center;
+            opacity: 0.8;
+            animation: fadeTail 0.3s ease-out infinite;
+        }
+
+        @keyframes fadeTail {
+            0% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #000000;
+            color: #A8FF00;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 3px solid #FF6F00;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .top-bar a {
+            color: #A8FF00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .top-bar a:hover {
+            color: #FF6F00;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: url('https://internet-eventos-mexico.com/PORTADA/PORTADA%20INTERNET%20EVENTOS.png') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            align-self: flex-end;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        .description {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .cta-button {
+            background-color: #FF6F00;
+            color: #000000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #A8FF00;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        ul {
+            list-style: none;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .carousel {
+            margin: 40px 0;
+        }
+
+        .carousel img {
+            max-width: 150px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        /* Bottom Image Section */
+        #bottom-image {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #000000;
+        }
+
+        #bottom-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #FF6F00;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #FF6F00;
+        }
+
+        .footer-cta-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-text {
+            font-size: 0.9em;
+            margin-top: 20px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #A8FF00;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .footer-links a:hover {
+            color: #FF6F00;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+            }
+
+            .description {
+                font-size: 1em;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            }
+
+            .carousel img {
+                max-width: 100px;
+            }
+
+            .top-bar {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            .logo {
+                max-width: 150px;
+                margin-right: 10px;
+            }
+
+            #bottom-image img {
+                max-width: 90%;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 0.9em;
+            }
+
+            .footer-cta-text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span>Llama ahora <a href="tel:+525541629630">55-4162-9630 ☎︎</a> o por <a href="https://wa.me/+525511264765">WhatsApp: 55-1126-4765 ✆</a></span>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/88-gWaRq3hA?autoplay=1&mute=1&loop=1&playlist=88-gWaRq3hA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-overlay"></div>
+
+    <header>
+        <img src="https://ciberall.net/Ciber%20ALL%C2%AEINTERNET%20LOGO%20.png" alt="Ciberall Logo" class="logo">
+        <h1>Ciberall®: Soluciones Premium de Internet y Tecnología para Eventos en México</h1>
+        <p class="description">Impulsa tus eventos con conectividad de alto rendimiento: Wi-Fi empresarial escalable, soporte técnico 24/7 y soluciones TI personalizadas para cualquier tipo de evento en México. Garantizamos estabilidad en transmisiones en vivo, pagos electrónicos y acceso masivo, cubriendo desde reuniones íntimas hasta megaeventos internacionales. ¡Tu éxito, nuestra red!</p>
+        <a href="https://ciberall.net/renta-internet-eventos-mexico.html" class="cta-button">COTIZA AHORA</a>
+    </header>
+
+    <section id="services">
+        <h2>¿Qué Ofrecemos?</h2>
+        <ul>
+            <li>✅ Internet Dedicado: Velocidad garantizada para transmisiones 4K, videollamadas profesionales y apps críticas.</li>
+            <li>✅ Wi-Fi Masivo: Hotspots inteligentes para +5,000 usuarios sin cortes (ideal conciertos/festivales).</li>
+            <li>✅ Soporte Proactivo: Monitoreo en tiempo real y asistencia técnica presencial durante tu evento.</li>
+            <li>✅ Seguridad Integral: Firewalls, encriptación de datos y VPN para proteger transacciones sensibles.</li>
+            <li>✅ Tecnología Adaptable: Soluciones satelitales, IoT para control de accesos y redes temporales en zonas remotas.</li>
+        </ul>
+    </section>
+
+    <section id="events">
+        <h2>Eventos que Transformamos</h2>
+        <ul>
+            <li>✨ Bodas de Élite</li>
+            <li>✨ Conferencias Internacionales</li>
+            <li>✨ Ferias Industriales</li>
+            <li>✨ Festivales</li>
+            <li>✨ Lanzamientos de Producto</li>
+        </ul>
+    </section>
+
+    <section id="why-us">
+        <h2>¿Por Qué Somos Únicos?</h2>
+        <ul>
+            <li>🔹 +20 años operando en 25 estados de México</li>
+            <li>🔹 Equipos certificados (Cisco, Aruba, Huawei, Starlink, Viasat)</li>
+            <li>🔹 Acuerdos de Nivel de Servicio (SLA) con compensación por incumplimiento</li>
+        </ul>
+    </section>
+
+    <section id="clients">
+        <h2>Experiencia Comprobada con los Mejores Clientes</h2>
+        <div class="carousel">
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-ALVARO.jpg" alt="Alvaro"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-CAMARA.jpg" alt="Camara"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-CCAPITAL.jpg" alt="CCapital"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-CMODELO.jpg" alt="CModelo"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-F1.jpg" alt="F1"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-HOTSPOT.jpg" alt="Hotspot"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-NINTENDOS.jpg" alt="Nintendo"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-TELEMUNDO.jpg" alt="Telemundo"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-TREUTER.jpg" alt="Treuter"></div>
+            <div><img src="https://internet-eventos-mexico.com/ICONOS/ICONO-IP-EVENTOS-CIBERALL-VIVE.jpg" alt="Vive"></div>
+        </div>
+    </section>
+
+    <!-- Bottom Image Section -->
+    <section id="bottom-image">
+        <img src="https://internet-eventos-mexico.com/PORTADA/internet-ciberall-eventos-ruenda-fortuna-coke.jpg" alt="Ciberall Eventos">
+    </section>
+
+    <footer>
+        <p class="footer-cta-text">LLAMA AL 55-4162-9630, MANDA WHATSAPP 55-1126-4765</p>
+        <a href="https://ciberall.net/renta-internet-eventos-mexico.html" class="cta-button">COTIZA AHORA</a>
+        <div class="social-icons">
+            <a href="https://facebook.com/ciberallhotspot"><img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook"></a>
+            <a href="https://mx.linkedin.com/company/ciberall"><img src="https://ciberall.net/img_indx/icono_linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/ipviasatelite/"><img src="https://ciberall.net/img_indx/icono_instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.pinterest.com.mx/ciberall/"><img src="https://ciberall.net/img_indx/icono_pinterest.jpg" alt="Pinterest"></a>
+            <a href="https://x.com/ciber_all"><img src="https://ciberall.net/img_indx/icono_x.jpg" alt="X"></a>
+        </div>
+        <div class="footer-links">
+            <a href="https://t.me/ciberall" target="_blank">Telegram @ciberall</a>
+            <a href="https://www.hotspotadmin.com/login/" target="_blank">Monitoreo HotSpot</a>
+            <a href="https://studio--bandwidth-calculator-7u4sk.us-central1.hosted.app/" target="_blank">Calculador Banda Ancha</a>
+            <a href="https://chambamax.com/" target="_blank">ChambaMax</a>
+            <a href="https://aztecall.com/" target="_blank">AzteCall</a>
+            <a href="https://ipviasatelite.com.mx/" target="_blank">IPviaSatelite.com</a>
+        </div>
+        <p class="footer-text">Derechos Reservados Ciber ALL Internet S de RL de CV 2025</p>
+        <p class="footer-text">DISEÑO: <a href="http://www.lonso.net" target="_blank">STUDIO LONSO</a></p>
+        <p class="footer-text"><a href="https://ciberall.net">HOME: ciberall.net</a></p>
+    </footer>
+
+    <!-- Código de instalación Cliengo -->
+    <script type="text/javascript">
+        (function () { 
+            var ldk = document.createElement('script'); 
+            ldk.type = 'text/javascript'; 
+            ldk.async = true; 
+            ldk.src = 'https://s.cliengo.com/weboptimizer/617028df6c5bf9002a081b31/617028e16c5bf9002a081b37.js?platform=view_installation_code'; 
+            var s = document.getElementsByTagName('script')[0]; 
+            s.parentNode.insertBefore(ldk, s); 
+        })();
+    </script>
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/66009e151ec1082f04dab551/1hpp6j0rp';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                try {
+                    const cursor = document.querySelector('.custom-cursor');
+                    if (!cursor) {
+                        console.error('Custom cursor element not found!');
+                        return;
+                    }
+                    console.log('Custom cursor initialized successfully');
+
+                    let lastX = cursor.offsetLeft || 0;
+                    let lastY = cursor.offsetTop || 0;
+
+                    window.addEventListener('mousemove', function(e) {
+                        try {
+                            const x = e.clientX;
+                            const y = e.clientY;
+
+                            cursor.style.left = x + 'px';
+                            cursor.style.top = y + 'px';
+
+                            // Calculate direction for comet tail
+                            const deltaX = x - lastX;
+                            const deltaY = y - lastY;
+                            const angle = Math.atan2(deltaY, deltaX) * 180 / Math.PI;
+
+                            cursor.style.setProperty('--tail-angle', `${angle}deg`);
+
+                            lastX = x;
+                            lastY = y;
+                        } catch (err) {
+                            console.error('Error in mousemove handler:', err);
+                        }
+                    });
+                } catch (err) {
+                    console.error('Error initializing cursor:', err);
+                }
+            }, 500); // Delay to avoid conflicts
+        });
+    </script>
+</body>
+</html>
