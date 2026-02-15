@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CiBERALL® | Internet para Transmisiones en Vivo y Eventos</title>
-    <meta name="description" content="Internet de alta velocidad para streaming y eventos masivos en todo México. Fibra, Satélite y 5G con respaldo inteligente.">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="CiBERALL® | Internet para Eventos en Vivo">
-    <meta property="og:description" content="Conectividad de misión crítica para streaming, festivales y congresos. Cobertura en todo México.">
-    <meta property="og:image" content="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png">
+    <!-- SEO & OPEN GRAPH -->
+    <title>CiBERALL® | Internet Satelital para Eventos y Streaming en México</title>
+    <meta name="description" content="Conectividad de alta capacidad para transmisiones en vivo, streaming 4K y WiFi masivo en cualquier parte de México. Misión Crítica con respaldo Satelital.">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciberall.net/internet-para-eventos-mexico/">
+    <meta property="og:title" content="🔴 INTERNET PARA EVENTOS EN VIVO | CiBERALL® MÉXICO">
+    <meta property="og:description" content="Instalación de Internet para Streaming y WiFi masivo. No importa qué tan remoto sea tu evento, nosotros te conectamos vía Satélite y 5G.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/aztecallip-oss/internet-eventos-mexico/refs/heads/main/ICONOS/og-transmision-en-vivo-via-satelite-ciberall.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="🔴 Internet para Transmisión de Eventos">
+    <meta property="twitter:description" content="Conectividad profesional para Streaming en todo México. Fibra, Satélite y 5G.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/aztecallip-oss/internet-eventos-mexico/refs/heads/main/ICONOS/og-transmision-en-vivo-via-satelite-ciberall.png">
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -31,259 +41,238 @@
 
         .font-tech { font-family: 'Orbitron', sans-serif; }
 
-        /* Video Background Config */
+        /* Video Background */
         .video-container {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; overflow: hidden;
         }
 
         .video-container iframe {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vw;
-            height: 100vh;
-            transform: translate(-50%, -50%) scale(1.4);
+            top: 50%; left: 50%;
+            width: 100vw; height: 100vh;
+            transform: translate(-50%, -50%) scale(1.5);
             pointer-events: none;
-            opacity: 0.4;
+            opacity: 0.35;
         }
 
-        @media (min-aspect-ratio: 16/9) {
-            .video-container iframe { height: 56.25vw; }
-        }
-        @media (max-aspect-ratio: 16/9) {
-            .video-container iframe { width: 177.78vh; }
+        @media (min-aspect-ratio: 16/9) { .video-container iframe { height: 56.25vw; } }
+        @media (max-aspect-ratio: 16/9) { .video-container iframe { width: 177.78vh; } }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .hero-overlay {
-            background: linear-gradient(to bottom, rgba(2, 4, 8, 0.5) 0%, rgba(2, 4, 8, 0.9) 100%);
+            background: radial-gradient(circle at center, transparent 0%, var(--brand-dark) 100%);
         }
 
-        .glass-card {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(0, 174, 239, 0.4);
+            transition: all 0.3s ease;
         }
-
-        .btn-cyber {
-            position: relative;
-            overflow: hidden;
-            transition: 0.4s;
-            background: var(--brand-blue);
-            color: white;
-            font-family: 'Orbitron', sans-serif;
-        }
-
-        .btn-cyber:hover {
-            box-shadow: 0 0 30px var(--brand-blue);
+        .btn-glow:hover {
+            box-shadow: 0 0 40px rgba(0, 174, 239, 0.7);
             transform: translateY(-2px);
         }
 
-        .gradient-border {
-            border: 2px solid;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(to right, var(--brand-blue), var(--brand-orange));
-        }
-
         .pulse-live {
-            width: 8px;
-            height: 8px;
+            width: 10px; height: 10px;
             background: #ff0000;
             border-radius: 50%;
-            box-shadow: 0 0 10px #ff0000;
             animation: pulse 1.5s infinite;
         }
-
         @keyframes pulse {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.4; transform: scale(1.2); }
-            100% { opacity: 1; transform: scale(1); }
+            0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+            100% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+        }
+
+        .section-separator {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--brand-blue), transparent);
         }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- Navegación -->
-    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <!-- Header -->
+    <nav class="fixed w-full z-50 bg-black/70 backdrop-blur-lg border-b border-white/10 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="CiBERALL Logo" class="h-10">
-            </div>
-            <div class="hidden md:flex items-center gap-8 text-[10px] font-tech font-bold uppercase tracking-[0.3em]">
-                <a href="#soluciones" class="hover:text-blue-400">Soluciones</a>
-                <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
-                <a href="#contacto" class="bg-white text-black px-6 py-2.5 rounded-full hover:bg-blue-400 hover:text-white transition-all">Cotizar Evento</a>
+            <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="CiBERALL" class="h-10">
+            <div class="hidden md:flex items-center gap-8 text-[10px] font-tech tracking-[0.2em]">
+                <a href="#hero" class="hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#logistica" class="hover:text-blue-400 transition-colors">Logística</a>
+                <a href="#soluciones" class="hover:text-blue-400 transition-colors">Tecnología</a>
+                <a href="#contacto" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-400 transition-all font-bold">Solicitar Cotización</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section con Video -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center text-center px-6 pt-20">
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center px-6">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/mdnF9R-Bzpg?autoplay=1&mute=1&loop=1&playlist=mdnF9R-Bzpg&controls=0&showinfo=0&rel=0&modestbranding=1" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/mdnF9R-Bzpg?autoplay=1&mute=1&loop=1&playlist=mdnF9R-Bzpg&controls=0&rel=0" frameborder="0"></iframe>
         </div>
-        <div class="hero-overlay absolute inset-0"></div>
+        <div class="absolute inset-0 hero-overlay"></div>
 
-        <div class="relative z-10 max-w-5xl">
-            <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="relative z-10 text-center max-w-4xl">
+            <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8">
                 <div class="pulse-live"></div>
-                <span class="text-[10px] font-tech font-black tracking-[0.5em] text-blue-400 uppercase">Live Streaming Infrastructure</span>
+                <span class="text-[10px] font-tech tracking-[0.4em] uppercase">Conexión de Misión Crítica</span>
             </div>
-            <h1 class="text-5xl md:text-8xl font-black italic tracking-tighter uppercase leading-none mb-8">
-                TU EVENTO <br /> <span class="text-blue-400">SIEMPRE EN VIVO.</span>
+            <h1 class="text-6xl md:text-9xl font-black italic uppercase leading-none tracking-tighter mb-8">
+                EVENTOS <br> <span class="text-blue-500">CONECTADOS</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-300 font-medium max-w-3xl mx-auto mb-12">
-                Conectividad de misión crítica para transmisiones masivas, prensa y redes sociales en cualquier lugar de México. Fibra, Satélite LEO y 5G unidos por SD-WAN.
+            <p class="text-xl md:text-2xl text-slate-300 font-light mb-12">
+                Internet simétrico para <span class="text-white font-bold italic">Streaming 4K</span>, salas de prensa y producción en vivo en cualquier rincón de México.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="#contacto" class="btn-cyber px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-widest">Contratar Instalación</a>
-                <a href="#soluciones" class="bg-white/10 backdrop-blur-md border border-white/20 px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-widest hover:bg-white/20 transition-all">Ver Capacidades</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#contacto" class="btn-glow bg-blue-500 text-white px-12 py-5 rounded-2xl font-tech font-bold uppercase text-xs tracking-widest">Contratar Instalación</a>
+                <a href="#logistica" class="bg-white/10 border border-white/20 px-12 py-5 rounded-2xl font-tech font-bold uppercase text-xs tracking-widest hover:bg-white/20 transition-all">Ver Casos de Uso</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Soluciones -->
-    <section id="soluciones" class="py-32 bg-slate-950 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-orange-500 to-blue-500"></div>
+    <!-- Nueva Sección: Taquilla y Logística -->
+    <section id="logistica" class="py-32 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter">COBERTURA <span class="text-blue-400">SIN LÍMITES</span></h2>
-                <p class="text-slate-500 font-bold uppercase tracking-widest text-xs mt-4 italic">Nacional • Urbana • Rural • Extrema</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-10 rounded-[3rem] group hover:border-blue-500 transition-all">
-                    <div class="bg-blue-500/10 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-satellite-dish text-3xl"></i>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="absolute -inset-4 bg-orange-500/20 blur-3xl rounded-full"></div>
+                    <img src="https://ciberall.net/internet-para-eventos-mexico/img/wifi-venta-boletos-ciberall.jpg" alt="[WiFi para Venta de Boletos]" class="relative rounded-[3rem] border border-white/10 shadow-2xl">
+                    <div class="absolute bottom-10 right-10 glass-card p-6 rounded-2xl border-orange-500/30">
+                        <i class="fa-solid fa-ticket text-orange-500 text-3xl mb-2"></i>
+                        <p class="text-xs font-tech font-bold">ACCESO GARANTIZADO</p>
                     </div>
-                    <h3 class="font-tech text-xl font-black mb-4">ENLACE SATELITAL LEO</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Tecnología Starlink Enterprise con latencia mínima para streaming 4K en ubicaciones remotas.</p>
                 </div>
-
-                <div class="glass-card p-10 rounded-[3rem] group hover:border-orange-500 transition-all">
-                    <div class="bg-orange-500/10 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-wifi text-3xl"></i>
-                    </div>
-                    <h3 class="font-tech text-xl font-black mb-4">WIFI MASIVO</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Gestión de más de 5,000 usuarios simultáneos con portales cautivos y segmentación de red.</p>
-                </div>
-
-                <div class="glass-card p-10 rounded-[3rem] group hover:border-blue-500 transition-all">
-                    <div class="bg-blue-500/10 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-shield-halved text-3xl"></i>
-                    </div>
-                    <h3 class="font-tech text-xl font-black mb-4">RED REDUNDANTE</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Fallo automático de milisegundos. Si un enlace cae, tu transmisión continúa sin parpadear.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos / Casos de Uso -->
-    <section id="proyectos" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-                    <img src="https://ipviasatelite.com/planes/img/internet%20para%20eventos%20satelital.jpg" alt="[Transmisión de Eventos]" class="relative rounded-[3.5rem] shadow-2xl border border-white/5 grayscale hover:grayscale-0 transition-all duration-700">
-                </div>
-                <div class="space-y-10">
-                    <h2 class="text-5xl md:text-7xl font-black italic leading-[0.85] uppercase tracking-tighter">INFRAESTRUCTURA <br /> <span class="text-blue-400">PROFESIONAL</span></h2>
-                    <p class="text-lg text-slate-400 leading-relaxed font-medium">
-                        Hemos conectado festivales de música, eventos deportivos internacionales y convenciones gubernamentales. Nuestra logística garantiza instalación express en menos de 12 horas.
+                <div class="order-1 lg:order-2 space-y-8">
+                    <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none">
+                        TAQUILLA <br> <span class="text-orange-500">SÍNCRONA</span>
+                    </h2>
+                    <p class="text-lg text-slate-400 leading-relaxed">
+                        No permitas que la falta de internet detenga tus ingresos. Proveemos conectividad robusta para terminales de punto de venta, validación de códigos QR y taquillas en tiempo real, incluso en zonas de cero cobertura celular.
                     </p>
-                    <ul class="space-y-6">
-                        {[
-                            'IP Pública Estática dedicada para el Encoder.',
-                            'Backhaul de alta velocidad Starlink + Hughes + LTE.',
-                            'Monitoreo NOC dedicado durante todo el evento.',
-                            'Soporte técnico in-situ nivel Ingeniero.'
-                        ].map((text, i) => (
-                            <li key={i} className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest italic">
-                                <i class="fa-solid fa-check-double text-blue-500"></i>
-                                {text}
-                            </li>
-                        ))}
-                    </ul>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-2 border-orange-500 pl-6">
+                            <h4 class="font-tech text-sm font-bold text-orange-500">ZERO DOWNTIME</h4>
+                            <p class="text-xs text-slate-500">Transacciones sin interrupciones.</p>
+                        </div>
+                        <div class="border-l-2 border-blue-500 pl-6">
+                            <h4 class="font-tech text-sm font-bold text-blue-500">WIFI MASIVO</h4>
+                            <p class="text-xs text-slate-500">Para personal y asistentes.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Cotización -->
+    <div class="section-separator"></div>
+
+    <!-- Tecnología y Soluciones -->
+    <section id="soluciones" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">SOLUCIONES <span class="text-blue-500 text-outline">TÉCNICAS</span></h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Solución 1 -->
+                <div class="glass-card p-10 rounded-[2.5rem] hover:border-blue-500 transition-all group">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-satellite text-3xl"></i>
+                    </div>
+                    <h3 class="font-tech text-xl font-black mb-4">SATÉLITE LEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Baja latencia ideal para protocolos RTMP/SRT. Transmite desde montañas, desiertos o playas sin depender de cables.</p>
+                </div>
+                
+                <!-- Solución 2 -->
+                <div class="glass-card p-10 rounded-[2.5rem] hover:border-orange-500 transition-all group">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center text-orange-400 mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tower-broadcast text-3xl"></i>
+                    </div>
+                    <h3 class="font-tech text-xl font-black mb-4">ENLACES DE MICROONDAS</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Conexión dedicada punto a punto para anchos de banda simétricos de hasta 1Gbps en zonas urbanas.</p>
+                </div>
+
+                <!-- Solución 3 -->
+                <div class="glass-card p-10 rounded-[2.5rem] hover:border-blue-500 transition-all group">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-network-wired text-3xl"></i>
+                    </div>
+                    <h3 class="font-tech text-xl font-black mb-4">GESTIÓN SD-WAN</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Combinamos múltiples proveedores (Satelital + 5G + Fibra) para garantizar 99.99% de disponibilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
     <section id="contacto" class="py-32 bg-white text-slate-900">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-[10px] font-tech font-black tracking-[0.5em] text-blue-600 uppercase block mb-4 italic">Request Connection</span>
-                <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none">RESERVA TU <span class="text-blue-500">FECHA</span></h2>
+                <h2 class="text-5xl md:text-8xl font-black italic uppercase tracking-tighter leading-none mb-4">COTIZA <span class="text-blue-600">AHORA</span></h2>
+                <p class="font-bold text-slate-400 uppercase tracking-widest text-xs">Respuesta técnica en menos de 1 hora</p>
             </div>
 
-            <div class="bg-slate-50 p-10 md:p-20 rounded-[4rem] shadow-2xl border border-slate-100 relative overflow-hidden">
-                <form action="https://formspree.io/f/xkogdrnn" method="POST" class="space-y-8 relative z-10 font-bold">
+            <div class="bg-slate-50 p-8 md:p-16 rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.1)]">
+                <form action="https://formspree.io/f/xkogdrnn" method="POST" class="space-y-8 font-bold">
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Nombre / Empresa</label>
-                            <input type="text" name="cliente" required class="w-full bg-white border-none p-6 rounded-3xl shadow-inner focus:ring-2 focus:ring-blue-500" placeholder="Ej. Productora X">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Nombre del Evento / Empresa</label>
+                            <input type="text" name="empresa" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Ej. Festival Norte 2026">
                         </div>
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">WhatsApp de Contacto</label>
-                            <input type="tel" name="whatsapp" required class="w-full bg-white border-none p-6 rounded-3xl shadow-inner focus:ring-2 focus:ring-blue-500" placeholder="+52 ...">
-                        </div>
-                        <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Tipo de Evento</label>
-                            <select name="tipo_evento" class="w-full bg-white border-none p-6 rounded-3xl shadow-inner focus:ring-2 focus:ring-blue-500 appearance-none">
-                                <option value="streaming">Streaming en Vivo</option>
-                                <option value="masivo">Evento Masivo (WiFi Público)</option>
-                                <option value="prensa">Sala de Prensa</option>
-                                <option value="otro">Otro Proyecto</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Fecha Tentativa</label>
-                            <input type="date" name="fecha" required class="w-full bg-white border-none p-6 rounded-3xl shadow-inner focus:ring-2 focus:ring-blue-500">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">WhatsApp Directo</label>
+                            <input type="tel" name="whatsapp" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="+52 ...">
                         </div>
                     </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Correo Electrónico de Contacto</label>
+                            <input type="email" name="email" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Fecha del Evento</label>
+                            <input type="date" name="fecha" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all">
+                        </div>
+                    </div>
+
                     <div>
-                        <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Ubicación del Evento (Ciudad / Coordenadas)</label>
-                        <input type="text" name="ubicacion" required class="w-full bg-white border-none p-6 rounded-3xl shadow-inner focus:ring-2 focus:ring-blue-500" placeholder="Ej. Sierra Tarahumara / Tulum">
+                        <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Ubicación y Requerimientos</label>
+                        <textarea name="detalles" rows="4" class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Detalla la ubicación y si necesitas streaming o WiFi para taquilla..."></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-slate-900 text-white py-8 rounded-[2.5rem] font-tech font-black uppercase tracking-[0.3em] text-sm hover:bg-blue-600 transition-all shadow-2xl active:scale-95">
-                        Enviar Solicitud Técnica
+
+                    <button type="submit" class="w-full bg-slate-900 text-white py-8 rounded-[2.5rem] font-tech font-black uppercase tracking-[0.4em] text-sm hover:bg-blue-600 transition-all shadow-xl active:scale-95">
+                        Enviar Requerimientos Técnicos
                     </button>
-                    <p class="text-center text-[9px] text-slate-400 font-bold uppercase tracking-widest">Un ingeniero se pondrá en contacto en menos de 2 horas para el diagnóstico.</p>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-20 px-8 border-t border-white/5">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 items-center">
+    <footer class="py-20 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16 items-center">
             <div class="text-center md:text-left">
-                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="CiberALL Footer" class="h-10 mb-6 mx-auto md:mx-0">
-                <p class="text-[10px] text-slate-600 font-black uppercase tracking-[0.4em] italic">Red Nacional de Transporte de Datos</p>
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" class="h-10 mb-6 mx-auto md:mx-0">
+                <p class="text-[9px] font-tech text-slate-600 uppercase tracking-widest">Digital Mission Critical Infrastructure</p>
             </div>
-            <div class="flex flex-col items-center gap-6">
-                <div class="flex gap-10">
-                    <a href="https://facebook.com/ipviasatelite" target="_blank" class="text-3xl hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://x.com/ipviasatelite" target="_blank" class="text-3xl hover:text-blue-500 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://wa.me/525539648280" target="_blank" class="text-3xl hover:text-green-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+            <div class="flex justify-center gap-10">
+                <a href="https://wa.me/525539648280" class="text-3xl text-slate-500 hover:text-green-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://facebook.com/ipviasatelite" class="text-3xl text-slate-500 hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
             </div>
             <div class="text-center md:text-right">
-                <span class="text-[10px] text-slate-500 uppercase tracking-widest mb-4 block">Central de Soporte</span>
-                <a href="mailto:hola@ciberall.net" class="text-xl font-black italic hover:text-blue-500 transition-colors uppercase underline decoration-blue-500 decoration-4">hola@ciberall.net</a>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Contacto Global</p>
+                <a href="mailto:hola@ciberall.net" class="text-xl font-tech font-black text-white hover:text-blue-400 transition-colors">HOLA@CIBERALL.NET</a>
             </div>
         </div>
-        <div class="mt-20 pt-10 border-t border-white/5 text-center">
-            <p class="text-[8px] text-slate-800 uppercase tracking-[0.8em] font-black">
-                © 2026 CiBERALL® MÉXICO • TRANSMISIÓN DE DATOS SIN FRONTERAS • TODOS LOS DERECHOS RESERVADOS.
-            </p>
+        <div class="mt-20 text-center">
+            <p class="text-[8px] font-tech text-slate-800 uppercase tracking-[0.8em]">© 2026 CiBERALL® MÉXICO • CONEXIÓN TOTAL SIN BORDES</p>
         </div>
     </footer>
 
