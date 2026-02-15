@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="https://ciberall.net/favicon.ico">
+
     <!-- SEO & OPEN GRAPH -->
     <title>CiBERALL® | Internet Satelital para Eventos y Streaming en México</title>
     <meta name="description" content="Conectividad de alta capacidad para transmisiones en vivo, streaming 4K y WiFi masivo en cualquier parte de México. Misión Crítica con respaldo Satelital.">
@@ -14,12 +17,6 @@
     <meta property="og:title" content="🔴 INTERNET PARA EVENTOS EN VIVO | CiBERALL® MÉXICO">
     <meta property="og:description" content="Instalación de Internet para Streaming y WiFi masivo. No importa qué tan remoto sea tu evento, nosotros te conectamos vía Satélite y 5G.">
     <meta property="og:image" content="https://raw.githubusercontent.com/aztecallip-oss/internet-eventos-mexico/refs/heads/main/ICONOS/og-transmision-en-vivo-via-satelite-ciberall.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="🔴 Internet para Transmisión de Eventos">
-    <meta property="twitter:description" content="Conectividad profesional para Streaming en todo México. Fibra, Satélite y 5G.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/aztecallip-oss/internet-eventos-mexico/refs/heads/main/ICONOS/og-transmision-en-vivo-via-satelite-ciberall.png">
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -54,7 +51,7 @@
             width: 100vw; height: 100vh;
             transform: translate(-50%, -50%) scale(1.5);
             pointer-events: none;
-            opacity: 0.35;
+            opacity: 0.3;
         }
 
         @media (min-aspect-ratio: 16/9) { .video-container iframe { height: 56.25vw; } }
@@ -94,9 +91,21 @@
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--brand-blue), transparent);
         }
+
+        /* Scanline effect for futuristic feel */
+        .scanlines::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.1;
+        }
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden scanlines">
 
     <!-- Header -->
     <nav class="fixed w-full z-50 bg-black/70 backdrop-blur-lg border-b border-white/10 px-6 py-4">
@@ -121,22 +130,22 @@
         <div class="relative z-10 text-center max-w-4xl">
             <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8">
                 <div class="pulse-live"></div>
-                <span class="text-[10px] font-tech tracking-[0.4em] uppercase">Conexión de Misión Crítica</span>
+                <span class="text-[10px] font-tech tracking-[0.4em] uppercase">Misión Crítica: Transmisión en Vivo</span>
             </div>
             <h1 class="text-6xl md:text-9xl font-black italic uppercase leading-none tracking-tighter mb-8">
-                EVENTOS <br> <span class="text-blue-500">CONECTADOS</span>
+                TU EVENTO <br> <span class="text-blue-500">AL MUNDO</span>
             </h1>
             <p class="text-xl md:text-2xl text-slate-300 font-light mb-12">
-                Internet simétrico para <span class="text-white font-bold italic">Streaming 4K</span>, salas de prensa y producción en vivo en cualquier rincón de México.
+                Internet simétrico profesional para <span class="text-white font-bold italic">Streaming 4K</span> y WiFi masivo. No importa dónde sea el evento, nosotros llevamos la señal.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
                 <a href="#contacto" class="btn-glow bg-blue-500 text-white px-12 py-5 rounded-2xl font-tech font-bold uppercase text-xs tracking-widest">Contratar Instalación</a>
-                <a href="#logistica" class="bg-white/10 border border-white/20 px-12 py-5 rounded-2xl font-tech font-bold uppercase text-xs tracking-widest hover:bg-white/20 transition-all">Ver Casos de Uso</a>
+                <a href="#logistica" class="bg-white/10 border border-white/20 px-12 py-5 rounded-2xl font-tech font-bold uppercase text-xs tracking-widest hover:bg-white/20 transition-all">Ver Capacidades</a>
             </div>
         </div>
     </section>
 
-    <!-- Nueva Sección: Taquilla y Logística -->
+    <!-- Sección: Taquilla y Logística -->
     <section id="logistica" class="py-32 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -145,24 +154,24 @@
                     <img src="https://ciberall.net/internet-para-eventos-mexico/img/wifi-venta-boletos-ciberall.jpg" alt="[WiFi para Venta de Boletos]" class="relative rounded-[3rem] border border-white/10 shadow-2xl">
                     <div class="absolute bottom-10 right-10 glass-card p-6 rounded-2xl border-orange-500/30">
                         <i class="fa-solid fa-ticket text-orange-500 text-3xl mb-2"></i>
-                        <p class="text-xs font-tech font-bold">ACCESO GARANTIZADO</p>
+                        <p class="text-xs font-tech font-bold text-white uppercase">Venta Síncrona</p>
                     </div>
                 </div>
                 <div class="order-1 lg:order-2 space-y-8">
-                    <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none">
-                        TAQUILLA <br> <span class="text-orange-500">SÍNCRONA</span>
+                    <h2 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none text-white">
+                        TAQUILLA <br> <span class="text-orange-500">SIN CAÍDAS</span>
                     </h2>
                     <p class="text-lg text-slate-400 leading-relaxed">
-                        No permitas que la falta de internet detenga tus ingresos. Proveemos conectividad robusta para terminales de punto de venta, validación de códigos QR y taquillas en tiempo real, incluso en zonas de cero cobertura celular.
+                        Asegura cada transacción. Proporcionamos redes dedicadas para validación de boletos, terminales bancarias y sistemas de acreditación de prensa en tiempo real.
                     </p>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="border-l-2 border-orange-500 pl-6">
-                            <h4 class="font-tech text-sm font-bold text-orange-500">ZERO DOWNTIME</h4>
-                            <p class="text-xs text-slate-500">Transacciones sin interrupciones.</p>
+                            <h4 class="font-tech text-sm font-bold text-orange-500">MÁXIMA SEGURIDAD</h4>
+                            <p class="text-xs text-slate-500">Encriptación de punto a punto.</p>
                         </div>
                         <div class="border-l-2 border-blue-500 pl-6">
-                            <h4 class="font-tech text-sm font-bold text-blue-500">WIFI MASIVO</h4>
-                            <p class="text-xs text-slate-500">Para personal y asistentes.</p>
+                            <h4 class="font-tech text-sm font-bold text-blue-500">ALTA CAPACIDAD</h4>
+                            <p class="text-xs text-slate-500">Manejo de picos de tráfico.</p>
                         </div>
                     </div>
                 </div>
@@ -172,107 +181,104 @@
 
     <div class="section-separator"></div>
 
-    <!-- Tecnología y Soluciones -->
+    <!-- Tecnología -->
     <section id="soluciones" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-24">
-                <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter">SOLUCIONES <span class="text-blue-500 text-outline">TÉCNICAS</span></h2>
-            </div>
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-20 text-white">INFRAESTRUCTURA <span class="text-blue-500">GLOBAL</span></h2>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Solución 1 -->
+            <div class="grid md:grid-cols-3 gap-8 text-left">
                 <div class="glass-card p-10 rounded-[2.5rem] hover:border-blue-500 transition-all group">
-                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-satellite text-3xl"></i>
-                    </div>
-                    <h3 class="font-tech text-xl font-black mb-4">SATÉLITE LEO</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Baja latencia ideal para protocolos RTMP/SRT. Transmite desde montañas, desiertos o playas sin depender de cables.</p>
+                    <i class="fa-solid fa-satellite text-4xl text-blue-400 mb-6 group-hover:rotate-12 transition-transform"></i>
+                    <h3 class="font-tech text-xl font-black mb-4 uppercase">Satelital LEO</h3>
+                    <p class="text-slate-400 text-sm">Starlink Enterprise para latencias de menos de 40ms, ideal para live streaming profesional.</p>
                 </div>
                 
-                <!-- Solución 2 -->
                 <div class="glass-card p-10 rounded-[2.5rem] hover:border-orange-500 transition-all group">
-                    <div class="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center text-orange-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-tower-broadcast text-3xl"></i>
-                    </div>
-                    <h3 class="font-tech text-xl font-black mb-4">ENLACES DE MICROONDAS</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Conexión dedicada punto a punto para anchos de banda simétricos de hasta 1Gbps en zonas urbanas.</p>
+                    <i class="fa-solid fa-wifi text-4xl text-orange-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-tech text-xl font-black mb-4 uppercase">WiFi 6 Masivo</h3>
+                    <p class="text-slate-400 text-sm">Cobertura total en estadios, centros de convenciones y plazas públicas para miles de dispositivos.</p>
                 </div>
 
-                <!-- Solución 3 -->
                 <div class="glass-card p-10 rounded-[2.5rem] hover:border-blue-500 transition-all group">
-                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-network-wired text-3xl"></i>
-                    </div>
-                    <h3 class="font-tech text-xl font-black mb-4">GESTIÓN SD-WAN</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Combinamos múltiples proveedores (Satelital + 5G + Fibra) para garantizar 99.99% de disponibilidad.</p>
+                    <i class="fa-solid fa-shield-halved text-4xl text-blue-400 mb-6 group-hover:pulse transition-transform"></i>
+                    <h3 class="font-tech text-xl font-black mb-4 uppercase">SD-WAN Bonding</h3>
+                    <p class="text-slate-400 text-sm">Suma de múltiples enlaces para una conexión redundante e indestructible durante la transmisión.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario -->
+    <!-- Contacto -->
     <section id="contacto" class="py-32 bg-white text-slate-900">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-5xl md:text-8xl font-black italic uppercase tracking-tighter leading-none mb-4">COTIZA <span class="text-blue-600">AHORA</span></h2>
-                <p class="font-bold text-slate-400 uppercase tracking-widest text-xs">Respuesta técnica en menos de 1 hora</p>
+                <h2 class="text-5xl md:text-8xl font-black italic uppercase tracking-tighter leading-none mb-4">RESERVAR <span class="text-blue-600">CONEXIÓN</span></h2>
+                <p class="font-bold text-slate-400 uppercase tracking-widest text-xs">Instalación disponible en todo México</p>
             </div>
 
-            <div class="bg-slate-50 p-8 md:p-16 rounded-[4rem] shadow-[0_50px_100px_rgba(0,0,0,0.1)]">
+            <div class="bg-slate-50 p-8 md:p-16 rounded-[4rem] shadow-2xl border border-slate-100">
                 <form action="https://formspree.io/f/xkogdrnn" method="POST" class="space-y-8 font-bold">
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Nombre del Evento / Empresa</label>
-                            <input type="text" name="empresa" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Ej. Festival Norte 2026">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Empresa / Productora</label>
+                            <input type="text" name="empresa" required class="w-full bg-white border-2 border-slate-200 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Nombre de tu organización">
                         </div>
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">WhatsApp Directo</label>
-                            <input type="tel" name="whatsapp" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="+52 ...">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Teléfono / WhatsApp</label>
+                            <input type="tel" name="whatsapp" required class="w-full bg-white border-2 border-slate-200 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="+52 ...">
                         </div>
                     </div>
                     
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Correo Electrónico de Contacto</label>
-                            <input type="email" name="email" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="tu@email.com">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Correo Electrónico</label>
+                            <input type="email" name="email" required class="w-full bg-white border-2 border-slate-200 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="contacto@tuempresa.com">
                         </div>
                         <div>
-                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Fecha del Evento</label>
-                            <input type="date" name="fecha" required class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all">
+                            <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Fecha de Evento</label>
+                            <input type="date" name="fecha" required class="w-full bg-white border-2 border-slate-200 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all">
                         </div>
                     </div>
 
                     <div>
-                        <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Ubicación y Requerimientos</label>
-                        <textarea name="detalles" rows="4" class="w-full bg-white border-2 border-slate-100 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Detalla la ubicación y si necesitas streaming o WiFi para taquilla..."></textarea>
+                        <label class="text-[10px] uppercase tracking-widest text-slate-400 ml-4 mb-2 block">Detalles técnicos del sitio</label>
+                        <textarea name="detalles" rows="4" class="w-full bg-white border-2 border-slate-200 p-5 rounded-3xl focus:border-blue-500 outline-none transition-all" placeholder="Ej. Estadio Azteca, zona de prensa, 50Mbps simétricos requeridos..."></textarea>
                     </div>
 
                     <button type="submit" class="w-full bg-slate-900 text-white py-8 rounded-[2.5rem] font-tech font-black uppercase tracking-[0.4em] text-sm hover:bg-blue-600 transition-all shadow-xl active:scale-95">
-                        Enviar Requerimientos Técnicos
+                        Solicitar Soporte Técnico
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Logo Futurista & Powered By -->
+    <section class="py-20 bg-black flex flex-col items-center justify-center border-t border-white/5">
+        <div class="opacity-80 hover:opacity-100 transition-opacity duration-500 text-center">
+            <img src="https://ciberall.com/ping/ciberall-logo-futurista-plano.png" alt="CiberALL Logo Futurista" class="h-16 md:h-24 mb-6 mx-auto drop-shadow-[0_0_15px_rgba(0,174,239,0.5)]">
+            <p class="font-tech text-[10px] tracking-[0.8em] text-blue-400 uppercase italic">Powered by CiberALL Team</p>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="py-20 bg-black border-t border-white/5">
+    <footer class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16 items-center">
             <div class="text-center md:text-left">
-                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" class="h-10 mb-6 mx-auto md:mx-0">
-                <p class="text-[9px] font-tech text-slate-600 uppercase tracking-widest">Digital Mission Critical Infrastructure</p>
+                <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" class="h-8 mb-6 mx-auto md:mx-0 opacity-50">
+                <p class="text-[8px] font-tech text-slate-700 uppercase tracking-widest">Network Operation Center - Mexico City</p>
             </div>
             <div class="flex justify-center gap-10">
-                <a href="https://wa.me/525539648280" class="text-3xl text-slate-500 hover:text-green-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://facebook.com/ipviasatelite" class="text-3xl text-slate-500 hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/525539648280" target="_blank" class="text-3xl text-slate-700 hover:text-green-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://facebook.com/ipviasatelite" target="_blank" class="text-3xl text-slate-700 hover:text-blue-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
             </div>
             <div class="text-center md:text-right">
-                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Contacto Global</p>
-                <a href="mailto:hola@ciberall.net" class="text-xl font-tech font-black text-white hover:text-blue-400 transition-colors">HOLA@CIBERALL.NET</a>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Contacto Directo</p>
+                <a href="mailto:fernando@lonso.net" class="text-lg font-tech font-black text-white hover:text-blue-400 transition-colors">FERNANDO@LONSO.NET</a>
             </div>
         </div>
         <div class="mt-20 text-center">
-            <p class="text-[8px] font-tech text-slate-800 uppercase tracking-[0.8em]">© 2026 CiBERALL® MÉXICO • CONEXIÓN TOTAL SIN BORDES</p>
+            <p class="text-[7px] font-tech text-slate-900 uppercase tracking-[1em]">CiBERALL® MÉXICO • TRANSMISIÓN DE DATOS DE MISIÓN CRÍTICA</p>
         </div>
     </footer>
 
