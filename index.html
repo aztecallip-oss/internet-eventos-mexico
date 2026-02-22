@@ -4,24 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO BÁSICO: Título y Descripción -->
-    <title>Internet para Eventos en México | Wi-Fi Masivo y Enlaces Dedicados | CiBERALL®</title>
-    <meta name="description" content="Líderes en Internet para eventos en México. Ofrecemos Wi-Fi de alta densidad, streaming profesional y enlaces dedicados con respaldo satelital LEO (Starlink). ¡Conectividad garantizada, llama al 55-3964-8280!" />
-    <meta name="keywords" content="internet para eventos mexico, wifi masivo para congresos, enlaces dedicados eventos, internet satelital para eventos, proveedores de internet temporal, wifi para festivales, ciberall" />
+    <!-- SEO AVANZADO -->
+    <title>Internet para Eventos en México | +20 Años en F1, Corona Capital, Vive Latino | CiBERALL®</title>
+    <meta name="description" content="Más de 20 años conectando los eventos más grandes de México: Corona Capital, F1, Vive Latino. Wi-Fi masivo en Arena CDMX, Palacio de los Deportes y más. ¡Cotiza al 55-3964-8280!" />
+    <meta name="keywords" content="internet corona capital, wifi vive latino, internet formula 1 mexico, internet arena ciudad de mexico, wifi palacio de los deportes, internet para carnavales, transmisiones en vivo mexico, ciberall eventos" />
     <meta name="author" content="CiBERALL" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- OPEN GRAPH (Social Media SEO) -->
-    <meta property="og:title" content="Internet para Eventos en México que no puede fallar | CiBERALL®" />
-    <meta property="og:description" content="Conectividad profesional para conciertos, congresos y expos. Wi-Fi masivo y enlaces dedicados en todo México." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://internet-eventos-mexico.com/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="CiBERALL®: 20 Años Conectando los Eventos Más Grandes de México" />
+    <meta property="og:description" content="Desde la Fórmula 1 hasta el Corona Capital. Conectividad que no falla en las sedes más importantes de México." />
     <meta property="og:image" content="https://internet-eventos-mexico.com/PORTADA/PORTADA%20INTERNET%20EVENTOS.png" />
-    <meta property="og:locale" content="es_MX" />
 
-    <!-- Favicon -->
     <link rel="icon" href="https://ciberall.net/favicon.ico" />
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600;700&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,14 +42,6 @@
             text-transform: uppercase;
         }
 
-        /* --- SEO CONTENT BLOCKS (Visualmente atractivos) --- */
-        .seo-section {
-            background: linear-gradient(180deg, #050910 0%, #000 100%);
-            padding: 80px 0;
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        /* --- TOP BAR CONVERSIÓN --- */
         .top-bar {
             background: #000;
             border-bottom: 1px solid var(--primary);
@@ -69,34 +55,43 @@
 
         .phone-link {
             color: var(--accent);
-            font-weight: 700;
+            font-weight: 800;
             text-decoration: none;
             transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
         }
 
-        .phone-link:hover {
-            color: white;
-            text-shadow: 0 0 10px var(--accent);
-        }
-
-        /* --- HERO --- */
         .hero-bg {
             background: radial-gradient(circle at center, #12144D 0%, #000 70%);
-            padding: 100px 0;
+            padding: 80px 0;
+        }
+
+        .experience-stripe {
+            background: #050910;
+            border-y: 1px solid #1a1a1a;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        .marquee {
+            display: flex;
+            gap: 50px;
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         .lead-form {
             background: rgba(10, 10, 10, 0.9);
             border: 2px solid var(--primary);
             border-radius: 24px;
-            padding: 40px;
+            padding: 30px;
             box-shadow: 0 0 40px rgba(255, 111, 0, 0.2);
         }
 
-        /* --- BOTONES FLOTANTES --- */
         .float-wrap {
             position: fixed;
             bottom: 30px;
@@ -121,285 +116,164 @@
             border: 2px solid white;
         }
 
-        .btn-float:hover { transform: scale(1.1) rotate(5deg); }
-        .bg-whats { background-color: var(--whatsapp); }
         .bg-call { background-color: var(--primary); animation: pulse 2s infinite; }
-
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.7); }
             70% { box-shadow: 0 0 0 15px rgba(255, 111, 0, 0); }
             100% { box-shadow: 0 0 0 0 rgba(255, 111, 0, 0); }
         }
-
-        .call-popup {
-            position: absolute;
-            bottom: 80px;
-            right: 0;
-            background: #111;
-            border: 1px solid var(--primary);
-            border-radius: 15px;
-            padding: 20px;
-            width: 250px;
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .call-popup.active { display: flex; animation: slideIn 0.3s ease-out; }
-
-        @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
 
-    <!-- Top Bar SEO & Lead Intake -->
+    <!-- Top Bar: Intake Prioritario -->
     <div class="top-bar">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
-            <p class="text-[10px] md:text-xs uppercase tracking-widest text-zinc-400">Expertos en Conectividad Temporal para Eventos</p>
-            <div class="flex gap-4 md:gap-8">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <p class="text-[10px] uppercase font-bold text-zinc-400 hidden md:block">Expertos en Eventos Críticos desde hace más de 20 años</p>
+            <div class="flex gap-6 w-full md:w-auto justify-center md:justify-end">
                 <a href="tel:+525539648280" class="phone-link"><i class="fas fa-phone"></i> 55-3964-8280</a>
                 <a href="tel:+526644386677" class="phone-link"><i class="fas fa-phone"></i> 6644-38-6677</a>
             </div>
         </div>
     </div>
 
-    <!-- Header Principal -->
-    <header class="py-6 border-b border-zinc-900 bg-black/50">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="https://ipviasatelite.com/planes/img/logo%20satelital%20ciberall.png" alt="CiBERALL Logotipo" class="h-10 md:h-12">
-                <div class="hidden md:block">
-                    <span class="block text-xs font-bold text-zinc-500 uppercase tracking-tighter">The Internet Company</span>
-                    <span class="block text-sm font-headline text-white">Eventos México</span>
-                </div>
-            </div>
-            <nav class="hidden lg:flex gap-8 text-xs font-bold uppercase tracking-widest">
-                <a href="#servicios" class="hover:text-[var(--accent)] transition">Servicios</a>
-                <a href="#tecnologia" class="hover:text-[var(--accent)] transition">Tecnología</a>
-                <a href="#cobertura" class="hover:text-[var(--accent)] transition">Cobertura</a>
-                <a href="#cotizar" class="text-[var(--primary)] border border-[var(--primary)] px-4 py-2 rounded-full hover:bg-[var(--primary)] hover:text-black transition">Cotizar Ahora</a>
-            </nav>
+    <!-- Banner de Experiencia (Marquee) -->
+    <div class="experience-stripe">
+        <div class="marquee text-[var(--accent)] font-headline text-xs tracking-widest">
+            <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FÓRMULA 1 MÉXICO</span> <span>FESTIVAL DARDO</span> <span>ARENA CDMX</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES NACIONALES</span> <span>TRANSMISIONES EN VIVO</span>
+            <!-- Duplicado para loop infinito -->
+            <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FÓRMULA 1 MÉXICO</span> <span>FESTIVAL DARDO</span> <span>ARENA CDMX</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES NACIONALES</span> <span>TRANSMISIONES EN VIVO</span>
         </div>
-    </header>
+    </div>
 
     <main>
-        <!-- HERO SECTION (SEO H1) -->
+        <!-- HERO -->
         <section class="hero-bg">
-            <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-[var(--accent)] font-bold uppercase tracking-widest text-sm mb-4 block">Proveedor Líder en Conectividad Profesional</span>
-                    <h1 class="text-4xl md:text-6xl font-headline leading-tight mb-6">
-                        Internet para Eventos en México: <span class="text-[var(--primary)]">Wi-Fi Masivo</span> que no falla
+                    <h1 class="text-4xl md:text-6xl font-headline leading-tight mb-4">
+                        Conectividad de <span class="text-[var(--primary)]">Clase Mundial</span> para Eventos
                     </h1>
-                    <p class="text-lg text-zinc-400 mb-8 leading-relaxed">
-                        Soluciones de <strong>Internet Temporal</strong> diseñadas para conciertos, congresos, ferias y lanzamientos de marca. Desplegamos infraestructura de alta disponibilidad en cualquier sede del país.
+                    <p class="text-xl text-[var(--accent)] font-bold mb-6">MÁS DE 20 AÑOS DE EXPERIENCIA EN MÉXICO</p>
+                    <p class="text-zinc-400 mb-8 leading-relaxed">
+                        Desde la <strong>Fórmula 1</strong> hasta el <strong>Corona Capital</strong>, hemos diseñado y operado el Internet de los eventos más icónicos de México. Wi-Fi masivo, enlaces dedicados y soporte técnico en sitio en las sedes más exigentes.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center gap-3 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
-                            <i class="fas fa-satellite text-[var(--accent)] text-2xl"></i>
-                            <div>
-                                <span class="block text-white font-bold text-sm">Respaldo Starlink</span>
-                                <span class="block text-xs text-zinc-500">Baja Latencia LEO</span>
-                            </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="border-l-4 border-[var(--primary)] pl-4">
+                            <span class="block text-2xl font-headline">20+</span>
+                            <span class="text-xs uppercase text-zinc-500">Años de Trayectoria</span>
                         </div>
-                        <div class="flex items-center gap-3 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800">
-                            <i class="fas fa-wifi text-[var(--accent)] text-2xl"></i>
-                            <div>
-                                <span class="block text-white font-bold text-sm">Wi-Fi 6 Masivo</span>
-                                <span class="block text-xs text-zinc-500">Alta Densidad</span>
-                            </div>
+                        <div class="border-l-4 border-[var(--accent)] pl-4">
+                            <span class="block text-2xl font-headline">10M+</span>
+                            <span class="text-xs uppercase text-zinc-500">Usuarios Conectados</span>
                         </div>
                     </div>
                 </div>
 
+                <!-- Formulario de Captación -->
                 <div class="lead-form" id="cotizar">
-                    <h2 class="text-xl font-headline mb-2 text-white">Cotiza tu Evento</h2>
-                    <p class="text-xs text-zinc-500 mb-6 italic">Propuesta formal en menos de 24 horas hábiles.</p>
-                    
-                    <form id="contact-form" class="space-y-4">
-                        <input type="text" name="empresa" placeholder="Empresa o Agencia" required class="w-full bg-black border border-zinc-800 p-3 rounded-lg text-white focus:border-[var(--accent)] outline-none">
+                    <h2 class="text-xl font-headline mb-4 text-white">Cotizar Proyecto</h2>
+                    <form id="prospect-form" class="space-y-4">
+                        <input type="text" name="evento" placeholder="Nombre del Evento / Empresa" required class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
                         <div class="grid grid-cols-2 gap-4">
-                            <input type="tel" name="whatsapp" placeholder="WhatsApp" required class="w-full bg-black border border-zinc-800 p-3 rounded-lg text-white focus:border-[var(--accent)] outline-none">
-                            <input type="text" name="ciudad" placeholder="Ciudad Sede" required class="w-full bg-black border border-zinc-800 p-3 rounded-lg text-white focus:border-[var(--accent)] outline-none">
+                            <input type="tel" name="whatsapp" placeholder="WhatsApp" required class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
+                            <input type="text" name="sede" placeholder="Sede (Ej. Arena CDMX)" class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
                         </div>
-                        <select name="asistentes" class="w-full bg-black border border-zinc-800 p-3 rounded-lg text-white focus:border-[var(--accent)] outline-none">
-                            <option value="">Nivel de Asistentes</option>
-                            <option value="100-500">100 - 500 personas</option>
-                            <option value="500-2000">500 - 2,000 personas</option>
-                            <option value="2000+">Más de 2,000 personas</option>
-                        </select>
-                        <textarea name="detalles" placeholder="¿Qué necesitas que funcione? (Streaming, Pagos, Wi-Fi VIP...)" class="w-full bg-black border border-zinc-800 p-3 rounded-lg text-white focus:border-[var(--accent)] outline-none h-24"></textarea>
-                        
-                        <button type="submit" class="w-full bg-[var(--primary)] text-black font-bold py-4 rounded-lg uppercase tracking-widest hover:brightness-110 transition">
-                            Validar y Cotizar por WhatsApp
+                        <textarea name="mensaje" placeholder="Detalles (Streaming, Wi-Fi Staff, TPV...)" class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none h-24 focus:border-[var(--accent)]"></textarea>
+                        <button type="submit" class="w-full bg-[var(--primary)] text-black font-bold py-4 rounded-xl hover:brightness-125 transition uppercase tracking-widest">
+                            Enviar y hablar con un experto
                         </button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <!-- SEO CONTENT BLOCK: POR QUÉ ELEGIRNOS -->
-        <section id="servicios" class="seo-section">
+        <!-- SECCIÓN DE SEDES Y EVENTOS (Prueba Social) -->
+        <section class="py-20 bg-[#020202]">
             <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-headline mb-4">Servicios de Conectividad para Eventos</h2>
-                    <p class="text-zinc-500 max-w-2xl mx-auto">CiBERALL® es el aliado estratégico para producciones que no pueden permitirse un corte de internet.</p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-900 hover:border-[var(--primary)] transition">
-                        <h3 class="text-lg font-bold mb-4 text-[var(--accent)]">Wi-Fi Masivo de Alta Densidad</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Implementamos redes Wi-Fi 6 gestionadas capaces de soportar miles de conexiones simultáneas. Ideal para <strong>congresos, exposiciones y festivales</strong> en México.
-                        </p>
+                <h2 class="text-center text-3xl font-headline mb-16">Infraestructura Probada en las <span class="text-[var(--primary)]">Sedes Más Grandes</span></h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Sede 1 -->
+                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
+                        <i class="fas fa-flag-checkered text-[var(--accent)] text-3xl mb-4"></i>
+                        <h3 class="font-headline text-sm mb-2 text-white">Fórmula 1 México</h3>
+                        <p class="text-xs text-zinc-500">Conectividad crítica en Paddock y áreas de prensa durante el Gran Premio.</p>
                     </div>
-                    <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-900 hover:border-[var(--primary)] transition">
-                        <h3 class="text-lg font-bold mb-4 text-[var(--accent)]">Internet Dedicado para Streaming</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Enlaces simétricos con IP pública fija. Garantizamos el ancho de banda necesario para transmisiones en vivo vía YouTube, Twitch o Zoom sin pérdida de paquetes.
-                        </p>
+                    <!-- Sede 2 -->
+                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
+                        <i class="fas fa-music text-[var(--accent)] text-3xl mb-4"></i>
+                        <h3 class="font-headline text-sm mb-2 text-white">Festivales Masivos</h3>
+                        <p class="text-xs text-zinc-500">Corona Capital y Vive Latino: Wi-Fi masivo para activaciones y operación.</p>
                     </div>
-                    <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-900 hover:border-[var(--primary)] transition">
-                        <h3 class="text-lg font-bold mb-4 text-[var(--accent)]">Respaldo Satelital de Emergencia</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Utilizamos tecnología <strong>Starlink Business</strong> y bonding Multi-WAN para crear redundancia real. Si tu proveedor local falla, CiBERALL mantiene el show activo.
-                        </p>
+                    <!-- Sede 3 -->
+                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
+                        <i class="fas fa-building text-[var(--accent)] text-3xl mb-4"></i>
+                        <h3 class="font-headline text-sm mb-2 text-white">Recintos Icónicos</h3>
+                        <p class="text-xs text-zinc-500">Arena CDMX, Palacio de los Deportes y Casino Militar con cobertura total.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEO BLOQUE: CONTENIDO SEMÁNTICO (Mejora posicionamiento) -->
-        <section id="tecnologia" class="py-20 bg-black">
-            <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1">
-                    <img src="https://internet-eventos-mexico.com/PORTADA/internet-ciberall-eventos-ruenda-fortuna-coke.jpg" alt="Instalación de Internet para Eventos CiBERALL" class="rounded-3xl border-2 border-[var(--primary)] shadow-2xl">
-                </div>
-                <div class="order-1 lg:order-2">
-                    <h2 class="text-3xl font-headline mb-6">Expertos en <span class="text-[var(--accent)]">Internet Temporal</span></h2>
-                    <div class="prose prose-invert text-zinc-400 text-sm space-y-4">
-                        <p>
-                            En el competitivo mercado de los <strong>eventos masivos en México</strong>, la conectividad se ha vuelto el pilar fundamental. Ya sea para la validación de boletos digitales, el procesamiento de pagos en terminales punto de venta (TPV) o la interacción en redes sociales de los asistentes, un internet lento significa pérdidas económicas.
-                        </p>
-                        <p>
-                            En CiBERALL®, diseñamos arquitecturas de red personalizadas. No solo instalamos un router; realizamos un <em>RF Survey</em> previo, segmentamos redes para staff y VIP, y monitoreamos el tráfico en tiempo real desde nuestro NOC central.
-                        </p>
-                        <ul class="list-disc pl-5 space-y-2">
-                            <li><strong>Latencia mínima:</strong> Optimizado para gaming y transmisiones remotas.</li>
-                            <li><strong>Seguridad:</strong> Firewalls empresariales para protección de datos de asistentes.</li>
-                            <li><strong>Cobertura:</strong> Antenas de largo alcance para exteriores y recintos industriales.</li>
-                        </ul>
+                    <!-- Sede 4 -->
+                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
+                        <i class="fas fa-broadcast-tower text-[var(--accent)] text-3xl mb-4"></i>
+                        <h3 class="font-headline text-sm mb-2 text-white">Transmisiones PRO</h3>
+                        <p class="text-xs text-zinc-500">Streaming en vivo para carnavales y conciertos de alta demanda de ancho de banda.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA FINAL -->
-        <section class="py-20 bg-[var(--primary)] text-black text-center">
-            <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-4xl font-headline mb-6">¿Tu evento es mañana y no tienes internet?</h2>
-                <p class="text-xl font-bold mb-8 uppercase tracking-widest">Atención de emergencias las 24 horas</p>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <a href="tel:+525539648280" class="bg-black text-white px-8 py-4 rounded-full font-bold text-xl hover:scale-105 transition shadow-xl">
-                        <i class="fas fa-phone mr-2"></i> 55-3964-8280
-                    </a>
-                    <a href="https://wa.me/525539648280" class="bg-white text-black px-8 py-4 rounded-full font-bold text-xl hover:scale-105 transition shadow-xl">
-                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp Directo
-                    </a>
+        <!-- SEO TEXT BLOCK -->
+        <section class="py-20 bg-black">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-2xl font-headline text-[var(--accent)] mb-6">Expertos en Internet para Conciertos y Carnavales</h2>
+                <div class="text-zinc-400 leading-relaxed space-y-4 text-sm">
+                    <p>
+                        Con más de dos décadas en el mercado, <strong>CiBERALL®</strong> ha perfeccionado la ingeniería detrás del <strong>Internet temporal</strong>. Entendemos que en recintos como el <strong>Casino Militar</strong> o el <strong>Festival Dardo</strong>, la estructura física representa retos únicos que solo la experiencia puede resolver.
+                    </p>
+                    <p>
+                        Nuestras soluciones incluyen <strong>Internet Dedicado</strong>, segmentación de redes para staff, prensa y público, así como el despliegue de <strong>antenas de alta densidad</strong> para carnavales y eventos en exteriores donde el 4G/5G suele saturarse.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-zinc-950 py-16 border-t border-zinc-900">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
-            <div>
-                <img src="https://ipviasatelite.com/planes/img/logo%20satelital%20ciberall.png" alt="CiBERALL White" class="h-8 mb-6 brightness-200">
-                <p class="text-xs text-zinc-500 leading-relaxed uppercase tracking-tighter">
-                    CiBER ALL® INTERNET S DE RL DE CV<br>
-                    RFC: CAI130528D93<br>
-                    CDMX | Tijuana | Guadalajara | Monterrey
-                </p>
+    <footer class="bg-zinc-950 py-12 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="tel:+525539648280" class="text-zinc-500 hover:text-white transition">📞 55-3964-8280</a>
+                <a href="https://wa.me/525539648280" class="text-zinc-500 hover:text-white transition">💬 WhatsApp</a>
             </div>
-            <div>
-                <h4 class="text-[var(--accent)] font-bold mb-6 text-sm">ENLACES RÁPIDOS</h4>
-                <ul class="text-xs space-y-3 text-zinc-400">
-                    <li><a href="https://ciberall.net/speed/" target="_blank" class="hover:text-white">Test de Velocidad</a></li>
-                    <li><a href="https://clientes.ciberall.net/" target="_blank" class="hover:text-white">Portal de Clientes</a></li>
-                    <li><a href="#" class="hover:text-white">Aviso de Privacidad</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[var(--accent)] font-bold mb-6 text-sm">CONTACTO MÉXICO</h4>
-                <ul class="text-xs space-y-3 text-zinc-400">
-                    <li>Ventas: 55-4162-9630</li>
-                    <li>Soporte: 55-1126-4765</li>
-                    <li>Email: hola@ciberall.com</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[var(--accent)] font-bold mb-6 text-sm">KEYWORDS SEO</h4>
-                <div class="flex flex-wrap gap-2">
-                    <span class="text-[10px] bg-zinc-900 px-2 py-1 rounded text-zinc-600">Wifi Eventos CDMX</span>
-                    <span class="text-[10px] bg-zinc-900 px-2 py-1 rounded text-zinc-600">Internet Satelital Mexico</span>
-                    <span class="text-[10px] bg-zinc-900 px-2 py-1 rounded text-zinc-600">Wifi para Conciertos</span>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-12 pt-8 border-t border-zinc-900 text-[10px] text-zinc-700">
-            © 2026 CiBERALL® - "Conectando el futuro, hoy. Esperar es para los dinosaurios."
+            <p class="text-[10px] text-zinc-700 uppercase tracking-widest">© 2026 CiBERALL® - Líderes en Conectividad para Eventos Especiales en México</p>
         </div>
     </footer>
 
-    <!-- BOTONES FLOTANTES DE CONVERSIÓN -->
+    <!-- BOTONES FLOTANTES -->
     <div class="float-wrap">
-        <div class="call-popup" id="callPopup">
-            <a href="tel:+525539648280" class="bg-zinc-800 p-3 rounded-lg text-white font-bold text-center border border-[var(--primary)]">
-                CDMX: 55-3964-8280
-            </a>
-            <a href="tel:+526644386677" class="bg-zinc-800 p-3 rounded-lg text-white font-bold text-center border border-[var(--primary)]">
-                Nacional: 6644-38-6677
-            </a>
-        </div>
-        <button onclick="toggleCall()" class="btn-float bg-call" title="Llamada Directa">
-            <i class="fas fa-phone-alt"></i>
-        </button>
-        <a href="https://wa.me/525539648280" target="_blank" class="btn-float bg-whats" title="WhatsApp Eventos">
+        <a href="https://wa.me/525539648280" target="_blank" class="btn-float bg-[var(--whatsapp)]">
             <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+525539648280" class="btn-float bg-call">
+            <i class="fas fa-phone-alt"></i>
         </a>
     </div>
 
     <script>
-        // Toggle para popup de llamadas
-        function toggleCall() {
-            document.getElementById('callPopup').classList.toggle('active');
-        }
-
-        // Manejo de envío de formulario a WhatsApp
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        // Manejo de formulario hacia WhatsApp
+        document.getElementById('prospect-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            const mensaje = `Hola CiBERALL, solicito cotización urgente para EVENTO:%0A` +
-                            `*Empresa:* ${data.empresa}%0A` +
-                            `*Ciudad:* ${data.ciudad}%0A` +
-                            `*WhatsApp:* ${data.whatsapp}%0A` +
-                            `*Asistentes:* ${data.asistentes}%0A` +
-                            `*Detalles:* ${data.detalles}`;
-            
-            const url = `https://wa.me/525539648280?text=${mensaje}`;
-            window.open(url, '_blank');
-        });
-
-        // Cerrar popup si se hace click fuera
-        window.addEventListener('click', function(e) {
-            if (!document.querySelector('.float-wrap').contains(e.target)) {
-                document.getElementById('callPopup').classList.remove('active');
-            }
+            const data = new FormData(this);
+            const msg = `Hola CiBERALL, me interesa contratar INTERNET PARA EVENTOS.%0A` +
+                        `*Evento:* ${data.get('evento')}%0A` +
+                        `*Sede:* ${data.get('sede')}%0A` +
+                        `*WhatsApp:* ${data.get('whatsapp')}%0A` +
+                        `*Detalles:* ${data.get('mensaje')}`;
+            window.open(`https://wa.me/525539648280?text=${msg}`, '_blank');
         });
     </script>
 
-    <!-- Tawk.to Live Chat -->
+    <!-- Tawk.to -->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
