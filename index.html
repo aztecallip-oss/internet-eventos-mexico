@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO AVANZADO -->
-    <title>Internet para Eventos en México | +20 Años en F1, Corona Capital, Vive Latino | CiBERALL®</title>
-    <meta name="description" content="Más de 20 años conectando los eventos más grandes de México: Corona Capital, F1, Vive Latino. Wi-Fi masivo en Arena CDMX, Palacio de los Deportes y más. ¡Cotiza al 55-3964-8280!" />
-    <meta name="keywords" content="internet corona capital, wifi vive latino, internet formula 1 mexico, internet arena ciudad de mexico, wifi palacio de los deportes, internet para carnavales, transmisiones en vivo mexico, ciberall eventos" />
-    <meta name="author" content="CiBERALL" />
-
+    <!-- SEO BÁSICO Y POSICIONAMIENTO -->
+    <title>Internet para Eventos en México | +20 Años en F1 y Corona Capital | CiBERALL®</title>
+    <meta name="description" content="Expertos en conectividad para eventos masivos: Corona Capital, F1, Vive Latino. Wi-Fi de alta densidad y streaming profesional en Arena CDMX y Palacio de los Deportes." />
+    <meta name="keywords" content="internet para eventos mexico, wifi masivo, internet formula 1, internet corona capital, streaming para eventos, internet temporal sedes mexico" />
+    
     <!-- Open Graph -->
-    <meta property="og:title" content="CiBERALL®: 20 Años Conectando los Eventos Más Grandes de México" />
-    <meta property="og:description" content="Desde la Fórmula 1 hasta el Corona Capital. Conectividad que no falla en las sedes más importantes de México." />
+    <meta property="og:title" content="CiBERALL® - 20 Años Conectando los Eventos más Grandes de México" />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="https://internet-eventos-mexico.com/PORTADA/PORTADA%20INTERNET%20EVENTOS.png" />
 
     <link rel="icon" href="https://ciberall.net/favicon.ico" />
@@ -42,41 +41,19 @@
             text-transform: uppercase;
         }
 
-        .top-bar {
-            background: #000;
-            border-bottom: 1px solid var(--primary);
-            padding: 10px 0;
-            font-size: 0.85rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-
-        .phone-link {
-            color: var(--accent);
-            font-weight: 800;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .hero-bg {
-            background: radial-gradient(circle at center, #12144D 0%, #000 70%);
-            padding: 80px 0;
-        }
-
+        /* Marquesina de Experiencia */
         .experience-stripe {
-            background: #050910;
-            border-y: 1px solid #1a1a1a;
-            padding: 20px 0;
+            background: #0a0a0a;
+            border-bottom: 1px solid #1a1a1a;
+            padding: 15px 0;
             overflow: hidden;
         }
 
         .marquee {
             display: flex;
-            gap: 50px;
+            gap: 60px;
             white-space: nowrap;
-            animation: scroll 30s linear infinite;
+            animation: scroll 40s linear infinite;
         }
 
         @keyframes scroll {
@@ -84,39 +61,65 @@
             100% { transform: translateX(-50%); }
         }
 
-        .lead-form {
-            background: rgba(10, 10, 10, 0.9);
+        .hero-section {
+            background: radial-gradient(circle at top right, #12144D 0%, #000 60%);
+        }
+
+        /* Estilos del Formulario */
+        .form-container {
+            background: rgba(15, 15, 15, 0.95);
             border: 2px solid var(--primary);
             border-radius: 24px;
-            padding: 30px;
-            box-shadow: 0 0 40px rgba(255, 111, 0, 0.2);
+            box-shadow: 0 0 50px rgba(255, 111, 0, 0.15);
         }
 
-        .float-wrap {
+        input, select, textarea {
+            background: #000 !important;
+            border: 1px solid #333 !important;
+            color: white !important;
+            transition: all 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--accent) !important;
+            box-shadow: 0 0 10px rgba(168, 255, 0, 0.2);
+            outline: none;
+        }
+
+        .btn-submit {
+            background: var(--primary);
+            color: black;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.2);
+            box-shadow: 0 5px 20px rgba(255, 111, 0, 0.4);
+        }
+
+        /* Botones Flotantes */
+        .float-btn {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .btn-float {
+            bottom: 25px;
             width: 60px;
             height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
             font-size: 24px;
+            color: white;
+            z-index: 1000;
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-            transition: transform 0.3s;
             border: 2px solid white;
         }
+        .float-wa { right: 25px; background: var(--whatsapp); }
+        .float-phone { right: 100px; background: var(--primary); animation: pulse 2s infinite; }
 
-        .bg-call { background-color: var(--primary); animation: pulse 2s infinite; }
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(255, 111, 0, 0.7); }
             70% { box-shadow: 0 0 0 15px rgba(255, 111, 0, 0); }
@@ -126,154 +129,166 @@
 </head>
 <body>
 
-    <!-- Top Bar: Intake Prioritario -->
-    <div class="top-bar">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <p class="text-[10px] uppercase font-bold text-zinc-400 hidden md:block">Expertos en Eventos Críticos desde hace más de 20 años</p>
-            <div class="flex gap-6 w-full md:w-auto justify-center md:justify-end">
-                <a href="tel:+525539648280" class="phone-link"><i class="fas fa-phone"></i> 55-3964-8280</a>
-                <a href="tel:+526644386677" class="phone-link"><i class="fas fa-phone"></i> 6644-38-6677</a>
+    <!-- Top Info -->
+    <div class="bg-black py-2 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-[10px] md:text-xs font-bold tracking-widest text-zinc-500">
+            <span>MÁS DE 20 AÑOS LIDERANDO LA INDUSTRIA</span>
+            <div class="flex gap-4">
+                <a href="tel:+525539648280" class="text-[var(--accent)] hover:text-white transition">55-3964-8280</a>
+                <span class="hidden md:inline">|</span>
+                <a href="tel:+526644386677" class="text-[var(--accent)] hover:text-white transition">6644-38-6677</a>
             </div>
         </div>
     </div>
 
-    <!-- Banner de Experiencia (Marquee) -->
+    <!-- Experience Marquee -->
     <div class="experience-stripe">
-        <div class="marquee text-[var(--accent)] font-headline text-xs tracking-widest">
-            <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FÓRMULA 1 MÉXICO</span> <span>FESTIVAL DARDO</span> <span>ARENA CDMX</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES NACIONALES</span> <span>TRANSMISIONES EN VIVO</span>
-            <!-- Duplicado para loop infinito -->
-            <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FÓRMULA 1 MÉXICO</span> <span>FESTIVAL DARDO</span> <span>ARENA CDMX</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES NACIONALES</span> <span>TRANSMISIONES EN VIVO</span>
+        <div class="marquee text-[var(--accent)] font-headline text-[10px] md:text-xs">
+            <span>FÓRMULA 1 MÉXICO</span> <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FESTIVAL DARDO</span> <span>ARENA CIUDAD DE MÉXICO</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES</span> <span>TRANSMISIONES EN VIVO</span>
+            <!-- Duplicate for loop -->
+            <span>FÓRMULA 1 MÉXICO</span> <span>CORONA CAPITAL</span> <span>VIVE LATINO</span> <span>FESTIVAL DARDO</span> <span>ARENA CIUDAD DE MÉXICO</span> <span>PALACIO DE LOS DEPORTES</span> <span>CASINO MILITAR</span> <span>CARNAVALES</span> <span>TRANSMISIONES EN VIVO</span>
         </div>
     </div>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero-bg">
-            <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+    <main class="hero-section pb-20">
+        <div class="max-w-7xl mx-auto px-4 pt-12 grid lg:grid-cols-2 gap-16 items-start">
+            
+            <!-- Left Column: Content -->
+            <div class="space-y-8">
                 <div>
-                    <h1 class="text-4xl md:text-6xl font-headline leading-tight mb-4">
-                        Conectividad de <span class="text-[var(--primary)]">Clase Mundial</span> para Eventos
+                    <img src="https://ipviasatelite.com/planes/img/logo%20satelital%20ciberall.png" alt="CiBERALL Logo" class="h-12 mb-8">
+                    <h1 class="text-4xl md:text-6xl font-headline leading-tight">
+                        Internet para <span class="text-[var(--primary)]">Eventos Críticos</span> en México
                     </h1>
-                    <p class="text-xl text-[var(--accent)] font-bold mb-6">MÁS DE 20 AÑOS DE EXPERIENCIA EN MÉXICO</p>
-                    <p class="text-zinc-400 mb-8 leading-relaxed">
-                        Desde la <strong>Fórmula 1</strong> hasta el <strong>Corona Capital</strong>, hemos diseñado y operado el Internet de los eventos más icónicos de México. Wi-Fi masivo, enlaces dedicados y soporte técnico en sitio en las sedes más exigentes.
+                    <p class="mt-6 text-xl text-zinc-400 leading-relaxed">
+                        No arriesgues tu producción. Conectividad probada en las sedes más importantes del país con respaldo satelital y enlaces dedicados.
                     </p>
-                    
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="border-l-4 border-[var(--primary)] pl-4">
-                            <span class="block text-2xl font-headline">20+</span>
-                            <span class="text-xs uppercase text-zinc-500">Años de Trayectoria</span>
-                        </div>
-                        <div class="border-l-4 border-[var(--accent)] pl-4">
-                            <span class="block text-2xl font-headline">10M+</span>
-                            <span class="text-xs uppercase text-zinc-500">Usuarios Conectados</span>
-                        </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-zinc-900/30 border border-zinc-800 rounded-2xl">
+                        <i class="fas fa-history text-[var(--accent)] text-2xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2 uppercase text-sm">20+ Años</h3>
+                        <p class="text-xs text-zinc-500">Operando en estadios, centros de convenciones y espacios abiertos.</p>
+                    </div>
+                    <div class="p-6 bg-zinc-900/30 border border-zinc-800 rounded-2xl">
+                        <i class="fas fa-shield-alt text-[var(--accent)] text-2xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2 uppercase text-sm">Cero Caídas</h3>
+                        <p class="text-xs text-zinc-500">Sistemas redundantes Multi-WAN y soporte técnico 24/7 en sitio.</p>
                     </div>
                 </div>
 
-                <!-- Formulario de Captación -->
-                <div class="lead-form" id="cotizar">
-                    <h2 class="text-xl font-headline mb-4 text-white">Cotizar Proyecto</h2>
-                    <form id="prospect-form" class="space-y-4">
-                        <input type="text" name="evento" placeholder="Nombre del Evento / Empresa" required class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
-                        <div class="grid grid-cols-2 gap-4">
-                            <input type="tel" name="whatsapp" placeholder="WhatsApp" required class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
-                            <input type="text" name="sede" placeholder="Sede (Ej. Arena CDMX)" class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none focus:border-[var(--accent)]">
-                        </div>
-                        <textarea name="mensaje" placeholder="Detalles (Streaming, Wi-Fi Staff, TPV...)" class="w-full bg-black border border-zinc-800 p-3 rounded-xl text-white outline-none h-24 focus:border-[var(--accent)]"></textarea>
-                        <button type="submit" class="w-full bg-[var(--primary)] text-black font-bold py-4 rounded-xl hover:brightness-125 transition uppercase tracking-widest">
-                            Enviar y hablar con un experto
-                        </button>
-                    </form>
+                <div class="border-t border-zinc-900 pt-8">
+                    <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-4">Casos de Éxito:</p>
+                    <div class="flex flex-wrap gap-4 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-500">
+                        <span class="bg-zinc-900 px-3 py-1 rounded border border-zinc-800 text-[10px]">F1 MÉXICO</span>
+                        <span class="bg-zinc-900 px-3 py-1 rounded border border-zinc-800 text-[10px]">VIVE LATINO</span>
+                        <span class="bg-zinc-900 px-3 py-1 rounded border border-zinc-800 text-[10px]">ARENA CDMX</span>
+                        <span class="bg-zinc-900 px-3 py-1 rounded border border-zinc-800 text-[10px]">CORONA CAPITAL</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- SECCIÓN DE SEDES Y EVENTOS (Prueba Social) -->
-        <section class="py-20 bg-[#020202]">
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-center text-3xl font-headline mb-16">Infraestructura Probada en las <span class="text-[var(--primary)]">Sedes Más Grandes</span></h2>
+            <!-- Right Column: Formspree Form -->
+            <div class="form-container p-8 md:p-10" id="contacto">
+                <h2 class="text-2xl font-headline mb-2">Cotización Inmediata</h2>
+                <p class="text-xs text-zinc-500 mb-8 uppercase tracking-widest">Completa los datos para recibir una propuesta técnica</p>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Sede 1 -->
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
-                        <i class="fas fa-flag-checkered text-[var(--accent)] text-3xl mb-4"></i>
-                        <h3 class="font-headline text-sm mb-2 text-white">Fórmula 1 México</h3>
-                        <p class="text-xs text-zinc-500">Conectividad crítica en Paddock y áreas de prensa durante el Gran Premio.</p>
+                <form action="https://formspree.io/f/xkogdrnn" method="POST" class="space-y-5">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Nombre Completo</label>
+                            <input type="text" name="nombre" required placeholder="Ej. Juan Pérez" class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Nombre del Evento</label>
+                            <input type="text" name="evento" required placeholder="Ej. Congreso Anual 2025" class="w-full p-3 rounded-xl text-sm">
+                        </div>
                     </div>
-                    <!-- Sede 2 -->
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
-                        <i class="fas fa-music text-[var(--accent)] text-3xl mb-4"></i>
-                        <h3 class="font-headline text-sm mb-2 text-white">Festivales Masivos</h3>
-                        <p class="text-xs text-zinc-500">Corona Capital y Vive Latino: Wi-Fi masivo para activaciones y operación.</p>
-                    </div>
-                    <!-- Sede 3 -->
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
-                        <i class="fas fa-building text-[var(--accent)] text-3xl mb-4"></i>
-                        <h3 class="font-headline text-sm mb-2 text-white">Recintos Icónicos</h3>
-                        <p class="text-xs text-zinc-500">Arena CDMX, Palacio de los Deportes y Casino Militar con cobertura total.</p>
-                    </div>
-                    <!-- Sede 4 -->
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800">
-                        <i class="fas fa-broadcast-tower text-[var(--accent)] text-3xl mb-4"></i>
-                        <h3 class="font-headline text-sm mb-2 text-white">Transmisiones PRO</h3>
-                        <p class="text-xs text-zinc-500">Streaming en vivo para carnavales y conciertos de alta demanda de ancho de banda.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- SEO TEXT BLOCK -->
-        <section class="py-20 bg-black">
-            <div class="max-w-4xl mx-auto px-4 text-center">
-                <h2 class="text-2xl font-headline text-[var(--accent)] mb-6">Expertos en Internet para Conciertos y Carnavales</h2>
-                <div class="text-zinc-400 leading-relaxed space-y-4 text-sm">
-                    <p>
-                        Con más de dos décadas en el mercado, <strong>CiBERALL®</strong> ha perfeccionado la ingeniería detrás del <strong>Internet temporal</strong>. Entendemos que en recintos como el <strong>Casino Militar</strong> o el <strong>Festival Dardo</strong>, la estructura física representa retos únicos que solo la experiencia puede resolver.
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Correo Electrónico</label>
+                            <input type="email" name="email" required placeholder="tu@empresa.com" class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Celular / WhatsApp</label>
+                            <input type="tel" name="cel_whatsapp" required placeholder="55 1234 5678" class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Dispositivos en red</label>
+                            <input type="number" name="num_dispositivos" placeholder="Ej. 500" class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">¿Requiere Streaming?</label>
+                            <select name="requiere_streaming" required class="w-full p-3 rounded-xl text-sm">
+                                <option value="" disabled selected>Selecciona...</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Fecha del Evento</label>
+                            <input type="date" name="fecha_evento" required class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Duración (Días/Horas)</label>
+                            <input type="text" name="duracion" placeholder="Ej. 3 días" class="w-full p-3 rounded-xl text-sm">
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-bold text-zinc-500 uppercase ml-2">Comentarios adicionales</label>
+                        <textarea name="comentarios" rows="3" placeholder="Detalles de la sede, necesidades especiales..." class="w-full p-3 rounded-xl text-sm"></textarea>
+                    </div>
+
+                    <!-- Honeypot para evitar Spam -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="btn-submit w-full py-4 rounded-xl text-lg mt-4">
+                        Solicitar Cotización Profesional
+                    </button>
+
+                    <p class="text-[9px] text-center text-zinc-600 uppercase tracking-tighter">
+                        Al enviar aceptas nuestra política de privacidad y tratamiento de datos.
                     </p>
-                    <p>
-                        Nuestras soluciones incluyen <strong>Internet Dedicado</strong>, segmentación de redes para staff, prensa y público, así como el despliegue de <strong>antenas de alta densidad</strong> para carnavales y eventos en exteriores donde el 4G/5G suele saturarse.
-                    </p>
-                </div>
+                </form>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="bg-zinc-950 py-12 border-t border-zinc-900">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="flex justify-center gap-8 mb-8">
-                <a href="tel:+525539648280" class="text-zinc-500 hover:text-white transition">📞 55-3964-8280</a>
-                <a href="https://wa.me/525539648280" class="text-zinc-500 hover:text-white transition">💬 WhatsApp</a>
+    <!-- SEO Content Section -->
+    <section class="bg-[#050505] py-20 border-t border-zinc-900">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-headline text-[var(--accent)] mb-8">Especialistas en Sedes de Alta Demanda</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-sm text-zinc-500 leading-relaxed">
+                <p>Implementamos redes de <strong>Internet Dedicado</strong> en recintos cerrados como la <strong>Arena CDMX</strong> y el <strong>Palacio de los Deportes</strong>, garantizando que el concreto y el acero no afecten tu señal.</p>
+                <p>Nuestra experiencia en el <strong>Casino Militar</strong> y el <strong>Festival Dardo</strong> nos permite gestionar infraestructuras complejas con seguridad de nivel gubernamental y militar.</p>
+                <p>Expertos en <strong>transmisiones en vivo</strong> para carnavales y conciertos masivos donde la estabilidad de subida (Upload) es el factor crítico para el éxito del streaming.</p>
             </div>
-            <p class="text-[10px] text-zinc-700 uppercase tracking-widest">© 2026 CiBERALL® - Líderes en Conectividad para Eventos Especiales en México</p>
         </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <a href="tel:+525539648280" class="float-btn float-phone" title="Llamar ahora">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+    <a href="https://wa.me/525539648280" class="float-btn float-wa" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-black py-12 border-t border-zinc-900 text-center">
+        <p class="text-[10px] text-zinc-700 uppercase tracking-[4px]">© 2026 CiBERALL® - CONECTANDO EL FUTURO HOY</p>
     </footer>
 
-    <!-- BOTONES FLOTANTES -->
-    <div class="float-wrap">
-        <a href="https://wa.me/525539648280" target="_blank" class="btn-float bg-[var(--whatsapp)]">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:+525539648280" class="btn-float bg-call">
-            <i class="fas fa-phone-alt"></i>
-        </a>
-    </div>
-
-    <script>
-        // Manejo de formulario hacia WhatsApp
-        document.getElementById('prospect-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const data = new FormData(this);
-            const msg = `Hola CiBERALL, me interesa contratar INTERNET PARA EVENTOS.%0A` +
-                        `*Evento:* ${data.get('evento')}%0A` +
-                        `*Sede:* ${data.get('sede')}%0A` +
-                        `*WhatsApp:* ${data.get('whatsapp')}%0A` +
-                        `*Detalles:* ${data.get('mensaje')}`;
-            window.open(`https://wa.me/525539648280?text=${msg}`, '_blank');
-        });
-    </script>
-
-    <!-- Tawk.to -->
+    <!-- Tawk.to Live Chat -->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
