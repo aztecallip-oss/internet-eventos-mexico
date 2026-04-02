@@ -251,14 +251,20 @@
         footer a:hover {
             color: var(--accent);
         }
-        .satellite-card {
+        .satellite-card, .success-card {
             background: linear-gradient(145deg, #0a0a0f 0%, #030305 100%);
             border: 1px solid #ff6f0033;
             transition: all 0.3s;
         }
-        .satellite-card:hover {
+        .satellite-card:hover, .success-card:hover {
             border-color: var(--accent);
             transform: translateY(-6px);
+        }
+        .success-card img {
+            transition: transform 0.4s ease;
+        }
+        .success-card:hover img {
+            transform: scale(1.02);
         }
     </style>
 </head>
@@ -399,6 +405,68 @@
                         <span class="bg-[var(--accent)]/20 px-3 py-1 rounded-full text-xs font-mono border border-[var(--accent)] text-[var(--accent)]">Baja latencia</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: CASOS DE ÉXITO CON IMÁGENES SOLICITADAS (COCA-COLA Y CORONA CAPITAL) -->
+    <section class="py-20 bg-gradient-to-t from-black to-[#05050f]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-[var(--accent)] text-sm font-bold tracking-widest bg-black/60 px-4 py-1 rounded-full">CLIENTES QUE CONFÍAN EN NOSOTROS</span>
+                <h2 class="text-3xl md:text-4xl font-headline mt-3">Casos de Éxito <span class="text-[var(--primary)]">Emblemáticos</span></h2>
+                <p class="text-zinc-400 max-w-2xl mx-auto mt-2">Conectividad crítica para las marcas más importantes en los escenarios más exigentes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Tarjeta 1: Coca-Cola en Autódromo Hermanos Rodríguez -->
+                <div class="success-card rounded-2xl overflow-hidden bg-black/70 border border-zinc-800 transition-all group">
+                    <div class="relative overflow-hidden h-56 md:h-64">
+                        <img src="PORTADA/internet-ciberall-eventos-ruenda-fortuna-coke.jpg" 
+                             alt="Coca-Cola en Autódromo Hermanos Rodríguez - Ciberall" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fas fa-crown text-[var(--accent)] text-xl"></i>
+                            <span class="text-[var(--accent)] text-xs font-bold uppercase tracking-wider">Cliente Premium</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-headline text-white mb-2">Coca-Cola</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            <strong>Sede: Autódromo Hermanos Rodríguez</strong> — Proveímos conectividad redundante y Wi-Fi masivo para operaciones críticas de patrocinio durante el Gran Premio de la Fórmula 1. Más de 12,000 usuarios simultáneos manejados sin intermitencias.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-zinc-900 px-2 py-0.5 rounded text-[10px] text-zinc-400">F1 México</span>
+                            <span class="bg-zinc-900 px-2 py-0.5 rounded text-[10px] text-zinc-400">10 Gbps dedicado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Corona Capital 2024 - Grupo Modelo -->
+                <div class="success-card rounded-2xl overflow-hidden bg-black/70 border border-zinc-800 transition-all group">
+                    <div class="relative overflow-hidden h-56 md:h-64">
+                        <img src="PORTADA/PORTADA%20INTERNET%20EVENTOS.png" 
+                             alt="Corona Capital 2024 - Ciberall conectividad para Grupo Modelo" 
+                             class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fas fa-music text-[var(--primary)] text-xl"></i>
+                            <span class="text-[var(--primary)] text-xs font-bold uppercase tracking-wider">Festival Masivo</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-headline text-white mb-2">Corona Capital 2024</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            <strong>Cliente: Grupo Modelo</strong> — Despliegue de infraestructura para más de 70,000 asistentes diarios. Redes de alta densidad con balanceo satelital + fibra óptica, garantizando cobertura en todas las zonas del Autódromo.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-zinc-900 px-2 py-0.5 rounded text-[10px] text-zinc-400">+70k usuarios</span>
+                            <span class="bg-zinc-900 px-2 py-0.5 rounded text-[10px] text-zinc-400">Streaming en vivo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <p class="text-xs text-zinc-500 border-t border-zinc-800 inline-block pt-4 px-6">Y muchos más: Vive Latino, F1, Dardo, Arena CDMX, Palacio de los Deportes.</p>
             </div>
         </div>
     </section>
