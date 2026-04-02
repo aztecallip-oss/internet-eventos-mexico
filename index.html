@@ -6,14 +6,14 @@
     
     <!-- SEO MEJORADO PARA CAPTACIÓN DE CLIENTES -->
     <title>Internet Profesional para Eventos Masivos | Ciberall® 20+ Años</title>
-    <meta name="description" content="Expertos en conectividad para eventos masivos: F1, Corona Capital, Vive Latino. Wi-Fi alta densidad + streaming 4K. Cotiza hoy mismo." />
+    <meta name="description" content="Expertos en conectividad para eventos masivos: F1, Corona Capital, Vive Latino. Wi-Fi alta densidad + streaming 4K vía satélite. Cotiza hoy mismo." />
     <meta name="keywords" content="internet para eventos, wifi masivo, conectividad satelital, streaming eventos mexico, internet temporal, f1 mexico, corona capital" />
     <meta name="author" content="CiBERALL®" />
     <meta name="robots" content="index, follow" />
     
     <!-- Open Graph / Redes Sociales -->
     <meta property="og:title" content="CiBERALL® - Internet para Eventos Críticos en México" />
-    <meta property="og:description" content="Más de 20 años conectando los eventos más grandes del país. Estabilidad, redundancia y cobertura total." />
+    <meta property="og:description" content="Más de 20 años conectando los eventos más grandes del país. Estabilidad, redundancia y cobertura total con transmisión satelital." />
     <meta property="og:image" content="https://ipviasatelite.com/internet-satelital-para-eventos/index_htm_files/711@2x.jpg" />
     <meta property="og:url" content="https://internet-eventos-mexico.com" />
     <meta property="og:type" content="website" />
@@ -251,6 +251,15 @@
         footer a:hover {
             color: var(--accent);
         }
+        .satellite-card {
+            background: linear-gradient(145deg, #0a0a0f 0%, #030305 100%);
+            border: 1px solid #ff6f0033;
+            transition: all 0.3s;
+        }
+        .satellite-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-6px);
+        }
     </style>
 </head>
 <body>
@@ -314,7 +323,7 @@
                     <div class="bg-zinc-900/70 rounded-full px-3 py-1 text-[11px] font-mono border border-zinc-700"><i class="fas fa-check-circle text-[var(--accent)]"></i> Corona Capital</div>
                     <div class="bg-zinc-900/70 rounded-full px-3 py-1 text-[11px] font-mono border border-zinc-700"><i class="fas fa-check-circle text-[var(--accent)]"></i> Vive Latino 20 años</div>
                 </div>
-                <!-- BOTÓN PRECIOS (nuevo) -->
+                <!-- BOTÓN PRECIOS -->
                 <div class="mt-4">
                     <a href="https://ciberall.com/cot/eventos/" target="_blank" class="btn-precios">
                         <i class="fas fa-tag"></i> VER PRECIOS PARA EVENTOS
@@ -371,6 +380,29 @@
         </div>
     </section>
 
+    <!-- NUEVA SECCIÓN: IMAGEN DE TRANSMISIÓN SATELITAL (ICONO) + DESCRIPCIÓN -->
+    <section class="py-16 bg-black">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="satellite-card rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="flex-shrink-0">
+                    <img src="ICONOS/og-transmision-en-vivo-via-satelite-ciberall.png" 
+                         alt="Transmisión en vivo vía satélite - Ciberall" 
+                         class="w-36 md:w-48 h-auto object-contain drop-shadow-[0_0_15px_rgba(168,255,0,0.3)]">
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl md:text-3xl font-headline text-[var(--accent)] mb-3">Transmisión en Vivo Vía Satélite</h3>
+                    <p class="text-zinc-300 text-base leading-relaxed">
+                        Con nuestra tecnología satelital de última generación, garantizamos <strong class="text-white">streaming 4K sin interrupciones</strong> desde cualquier ubicación remota o estadio. Ideal para eventos críticos donde la latencia y la estabilidad son clave. Respaldo bidireccional y cobertura nacional.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+                        <span class="bg-[var(--primary)]/20 px-3 py-1 rounded-full text-xs font-mono border border-[var(--primary)]">Enlace dedicado</span>
+                        <span class="bg-[var(--accent)]/20 px-3 py-1 rounded-full text-xs font-mono border border-[var(--accent)] text-[var(--accent)]">Baja latencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección de Especialización -->
     <section class="bg-[#050505] py-16 border-y border-zinc-900">
         <div class="max-w-6xl mx-auto px-4 text-center">
@@ -422,7 +454,7 @@
         </div>
     </section>
 
-    <!-- FOOTER ACTUALIZADO (texto exacto, enlaces solicitados) -->
+    <!-- FOOTER ACTUALIZADO -->
     <footer class="bg-black py-10 border-t border-zinc-900 text-center">
         <img src="https://ciberall.com/ping/ciberall-logo-futurista-plano.png" alt="logo" class="h-8 mx-auto opacity-70 mb-4">
         <p class="text-[11px] text-zinc-500 uppercase tracking-wide">2026 - CiBER ALL ® INTERNET S DE RL DE CV "THE INTERNET COMPANY" - Derechos Reservados</p>
