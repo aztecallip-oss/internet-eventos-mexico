@@ -115,6 +115,29 @@
             box-shadow: 0 10px 25px -5px rgba(255, 111, 0, 0.6);
         }
 
+        /* Botón PRECIOS llamativo */
+        .btn-precios {
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(8px);
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            font-weight: 800;
+            padding: 10px 24px;
+            border-radius: 60px;
+            transition: all 0.25s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .btn-precios:hover {
+            background: var(--accent);
+            color: black;
+            transform: scale(1.03);
+            box-shadow: 0 0 15px var(--accent);
+        }
+
         /* Botón flotante WhatsApp vistoso + efecto */
         .float-wa-vip {
             position: fixed;
@@ -222,18 +245,24 @@
             background: rgba(0,0,0,0.7);
             backdrop-filter: blur(2px);
         }
+        footer a {
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
 
-    <!-- Barra superior mejorada con nuevo número principal -->
+    <!-- Barra superior mejorada con dos números de contacto -->
     <div class="bg-black py-2 border-b border-zinc-900 sticky top-0 z-50 bg-glass">
         <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-between items-center text-[10px] md:text-xs font-bold tracking-widest text-zinc-400">
             <span class="flex items-center gap-2"><i class="fas fa-trophy text-[var(--accent)]"></i> +20 AÑOS LIDERANDO EVENTOS MASIVOS</span>
-            <div class="flex gap-4 items-center">
+            <div class="flex gap-4 items-center flex-wrap justify-end">
                 <a href="tel:+525511264765" class="text-[var(--accent)] hover:text-white transition flex items-center gap-1"><i class="fas fa-phone-alt"></i> <span>55 1126 4765</span></a>
-                <span class="hidden md:inline text-zinc-700">|</span>
-                <a href="tel:+525541629630" class="hover:text-white transition hidden md:inline">55-4162-9630</a>
+                <span class="text-zinc-700 hidden md:inline">|</span>
+                <a href="tel:+529992090385" class="text-[var(--accent)] hover:text-white transition flex items-center gap-1"><i class="fas fa-mobile-alt"></i> <span>999 209 0385</span></a>
                 <a href="https://wa.me/525511264765?text=Hola%20CiBERALL%2C%20necesito%20internet%20para%20mi%20evento" target="_blank" class="bg-[#25D366] text-black px-3 py-1 rounded-full flex items-center gap-1 text-[10px] font-bold"><i class="fab fa-whatsapp"></i> WhatsApp directo</a>
             </div>
         </div>
@@ -285,6 +314,13 @@
                     <div class="bg-zinc-900/70 rounded-full px-3 py-1 text-[11px] font-mono border border-zinc-700"><i class="fas fa-check-circle text-[var(--accent)]"></i> Corona Capital</div>
                     <div class="bg-zinc-900/70 rounded-full px-3 py-1 text-[11px] font-mono border border-zinc-700"><i class="fas fa-check-circle text-[var(--accent)]"></i> Vive Latino 20 años</div>
                 </div>
+                <!-- BOTÓN PRECIOS (nuevo) -->
+                <div class="mt-4">
+                    <a href="https://ciberall.com/cot/eventos/" target="_blank" class="btn-precios">
+                        <i class="fas fa-tag"></i> VER PRECIOS PARA EVENTOS
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
 
             <!-- Columna derecha: formulario de cotización (lead magnet) -->
@@ -316,13 +352,12 @@
                     <button type="submit" class="btn-submit w-full py-4 rounded-2xl text-lg font-extrabold tracking-wider flex items-center justify-center gap-2"><i class="fas fa-paper-plane"></i> Obtener presupuesto ahora</button>
                     <p class="text-[9px] text-center text-zinc-500">*Datos protegidos. Un asesor especializado te contactará vía WhatsApp.</p>
                 </form>
-                <!-- Micro contacto alternativo -->
-                <div class="mt-5 text-center text-xs text-zinc-500"><i class="fab fa-whatsapp text-[#25D366]"></i> ¿Prefieres WhatsApp? Escríbenos al <strong class="text-white">+52 55 1126 4765</strong></div>
+                <div class="mt-5 text-center text-xs text-zinc-500"><i class="fab fa-whatsapp text-[#25D366]"></i> ¿Prefieres WhatsApp? Escríbenos al <strong class="text-white">+52 55 1126 4765</strong> o <strong class="text-white">999 209 0385</strong></div>
             </div>
         </div>
     </main>
 
-    <!-- SECCIÓN DE VIDEO YOUTUBE (agregado para aumentar confianza) -->
+    <!-- SECCIÓN DE VIDEO YOUTUBE -->
     <section class="py-16 bg-gradient-to-b from-black to-[#03030f]">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-10">
@@ -336,7 +371,7 @@
         </div>
     </section>
 
-    <!-- Sección de Especialización y confianza (texto original mejorado) -->
+    <!-- Sección de Especialización -->
     <section class="bg-[#050505] py-16 border-y border-zinc-900">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-2xl md:text-3xl font-headline text-[var(--accent)] mb-4">Especialistas en Sedes de Alta Densidad</h2>
@@ -348,59 +383,60 @@
         </div>
     </section>
 
-    <!-- REDES SOCIALES (exigidas por el cliente) + botones vistosos -->
+    <!-- REDES SOCIALES -->
     <section class="py-16 bg-black">
         <div class="max-w-5xl mx-auto px-4 text-center">
             <h3 class="text-2xl font-headline mb-2">Síguenos en <span class="text-[var(--primary)]">Redes Sociales</span></h3>
             <p class="text-zinc-500 text-sm mb-10">Conoce nuestra trayectoria, proyectos y novedades en tiempo real</p>
             <div class="flex flex-wrap justify-center gap-8 md:gap-12">
-                <!-- Facebook (principal) -->
                 <a href="https://facebook.com/ciberallhotspot" target="_blank" rel="noopener noreferrer" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-facebook-f text-2xl text-[#1877F2] group-hover:scale-110 transition"></i>
                     <span class="text-[9px] uppercase tracking-wide">Ciberall</span>
                 </a>
-                <!-- Facebook secundario ipviasatelite -->
                 <a href="https://facebook.com/ipviasatelite" target="_blank" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-facebook text-2xl text-[#1877F2] group-hover:scale-110"></i>
                     <span class="text-[9px]">IpvíaSat</span>
                 </a>
-                <!-- LinkedIn -->
                 <a href="https://mx.linkedin.com/company/ciberall" target="_blank" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-linkedin-in text-2xl text-[#0A66C2] group-hover:scale-110"></i>
                     <span class="text-[9px]">LinkedIn</span>
                 </a>
-                <!-- Instagram -->
                 <a href="https://www.instagram.com/ipviasatelite/" target="_blank" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-instagram text-2xl text-[#E4405F] group-hover:scale-110"></i>
                     <span class="text-[9px]">Instagram</span>
                 </a>
-                <!-- Pinterest -->
                 <a href="https://www.pinterest.com.mx/ciberall/" target="_blank" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-pinterest-p text-2xl text-[#E60023] group-hover:scale-110"></i>
                     <span class="text-[9px]">Pinterest</span>
                 </a>
-                <!-- X (Twitter) -->
                 <a href="https://x.com/ipviasatelite" target="_blank" class="social-icon-circle flex flex-col items-center gap-1 group">
                     <i class="fab fa-x-twitter text-2xl text-white group-hover:scale-110"></i>
                     <span class="text-[9px]">X / Twitter</span>
                 </a>
             </div>
             <div class="mt-12 border-t border-zinc-900 pt-8 text-xs text-zinc-600 flex flex-wrap justify-center gap-x-8 gap-y-2">
-                <span><i class="fab fa-whatsapp text-[#25D366]"></i> +52 55 1126 4765</span>
+                <span><i class="fab fa-whatsapp text-[#25D366]"></i> +52 55 1126 4765 / 999 209 0385</span>
                 <span><i class="far fa-envelope"></i> ventas@ciberall.com</span>
                 <span><i class="fas fa-map-marker-alt"></i> CDMX / Mérida / Guadalajara</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER ACTUALIZADO (texto exacto, enlaces solicitados) -->
     <footer class="bg-black py-10 border-t border-zinc-900 text-center">
         <img src="https://ciberall.com/ping/ciberall-logo-futurista-plano.png" alt="logo" class="h-8 mx-auto opacity-70 mb-4">
-        <p class="text-[10px] text-zinc-700 uppercase tracking-[3px]">© 2026 CiBERALL® - Conectividad para eventos críticos. Todos los derechos reservados.</p>
-        <p class="text-[9px] text-zinc-800 mt-3">*Presupuestos personalizados según aforo, duración y requerimientos técnicos</p>
+        <p class="text-[11px] text-zinc-500 uppercase tracking-wide">2026 - CiBER ALL ® INTERNET S DE RL DE CV "THE INTERNET COMPANY" - Derechos Reservados</p>
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-3 text-xs text-zinc-500">
+            <a href="https://www.ciberall.com/politica-privacidad/" target="_blank" class="hover:text-[var(--accent)] transition"><i class="fas fa-lock"></i> Política de Privacidad</a>
+            <span class="text-zinc-700 hidden sm:inline">|</span>
+            <span>Programación, Desarrollo y Edición: <a href="https://lonso.net/" target="_blank" class="hover:text-[var(--accent)] transition font-medium">Studio Lonso</a></span>
+            <span class="text-zinc-700 hidden sm:inline">|</span>
+            <span>Powered by <a href="https://ciberall.com/" target="_blank" class="hover:text-[var(--accent)] transition font-bold">CiBERALL ®</a></span>
+        </div>
+        <p class="text-[9px] text-zinc-800 mt-5">Conectividad crítica para eventos masivos - Soluciones integrales desde 2004</p>
     </footer>
 
-    <!-- Botones flotantes: WhatsApp vistoso (nuevo número) + llamada -->
+    <!-- Botones flotantes: WhatsApp vistoso + llamada -->
     <div class="tooltip-wa hidden md:block">📲 Asesoría inmediata</div>
     <a href="https://wa.me/525511264765?text=Hola%20CiBERALL%2C%20requiero%20internet%20para%20un%20evento%20masivo%2C%20por%20favor%20contáctenme" 
        class="float-wa-vip" target="_blank" rel="noopener noreferrer" title="Chatea con un experto en eventos">
@@ -410,7 +446,7 @@
         <i class="fas fa-phone-alt text-white text-2xl"></i>
     </a>
 
-    <!-- Tawk.to Chat en vivo (mejora captación) -->
+    <!-- Tawk.to Chat en vivo -->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -422,16 +458,13 @@
             s0.parentNode.insertBefore(s1,s0);
         })();
     </script>
-    <!-- small extra: seguimiento de conversiones simple -->
     <script>
-        // Forzar smooth anchor para botones y tracking básico
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const target = document.querySelector(this.getAttribute('href'));
                 if(target) { e.preventDefault(); target.scrollIntoView({behavior: 'smooth'}); }
             });
         });
-        console.log("Web optimizada para conversión - Botón WhatsApp +525511264765, video integrado y redes sociales visibles");
     </script>
 </body>
 </html>
